@@ -1,0 +1,82 @@
+.detail-squars {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    margin: 5rem 0;
+    flex-direction: column;
+    align-items: center;
+    align-content: center
+}
+
+#bg6{
+    background-color: #1c1c1c;
+}
+
+.square-title {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 2rem 0 1rem 0;
+}
+
+.square {
+    width: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-shrink: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.square:hover {
+    background-color: rgb(249, 249, 249);
+}
+
+.square-text {
+    font-size: 1.2rem;
+    margin: 0 3rem 2rem 3rem;
+}
+
+.icons-container-square {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media only screen and (min-width: 768px) {
+    .detail-squars {
+        height: 50rem;
+        margin: 8rem 0;
+        flex-direction: row-reverse;
+    }
+
+    .square-title {
+        font-size: 4rem;
+        margin: 2rem 0 2rem 0;
+    }
+
+    .square {
+        width: 30%;
+        height: 45%;
+        background-size: 92% 92%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .square:hover {
+        background-color: rgb(249, 249, 249);
+    }
+
+    .square-text {
+        font-size: 2rem;
+        margin: 0 3rem;
+        height: 13rem;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+}

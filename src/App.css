@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+  background-color: #FEFEFE;
+  width: 100%;
+  height: 100%;
+  direction: rtl;
+  font-family: assistant;
+}
+
+@font-face {
+  font-family: assistant;
+  src: url('./media/fonts/Assistant-VariableFont_wght.ttf');
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+.white-text {
+  color: white;
+}

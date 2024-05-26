@@ -1,0 +1,31 @@
+.calendar-icon {
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    background-color: transparent;
+    background-size: contain;
+    background-image: url("../../media/images/calendar.svg");
+    cursor: pointer;
+    margin: 2rem 0;
+    background-repeat: no-repeat;
+}
+
+.waze-icon {
+    width: 4rem;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    .calendar-icon {
+        width: 8rem;
+        height: 8rem;
+        border: none;
+        background-color: transparent;
+        background-size: contain;
+        cursor: pointer;
+    }
+
+    .waze-icon {
+        width: 8rem;
+    }
+}
