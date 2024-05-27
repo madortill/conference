@@ -13,6 +13,7 @@
 .confirmation-card {
     width: 90%;
     height: fit-content;
+    padding: 1vh;
     z-index: 20;
     background-color: white;
     border: solid 1px black;
