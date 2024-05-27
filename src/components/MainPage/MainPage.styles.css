@@ -63,7 +63,7 @@
 }
 
 .sign-btn {
-    background-color: #0094D4;
+    background-color: #0094d4ba;
     color: rgb(2, 2, 2);
     border: none;
     border-radius: 15px;
@@ -73,7 +73,7 @@
 }
 
 .sign-btn:hover {
-    background-color: #cce676;
+    background-color: #1799d1a0;
 }
 
 .header {

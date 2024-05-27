@@ -2,56 +2,52 @@ import './Luz.styles.css'
 
 const Luz = () => {
     const LUZ = [{
-        "time": "8:45",
-        "activity": "ארוחת בוקר | התכנסות | רישום"
+        "time": "8:30",
+        "activity": "התכנסות | קפה ומאפה"
     },
     {
         "time": "9:30",
-        "activity": "פתיחת הכנס | רע״ן הדרכה"
-    },
-    {
-        "time": "9:50",
-        "activity": "ברכות פתיחה | ראש אט״ל"
+        "activity": "פתיחת יום"
     },
     {
         "time": "10:00",
         "activity": "הרצאת מליאה"
     },
     {
-        "time": "11:00",
-        "activity": "הפסקה"
+        "time": "11:30",
+        "activity": "בראנץ' מפנק"
     },
     {
-        "time": "11:20",
+        "time": "12:15",
+        "activity": "מעבר למושבים"
+    },
+    {
+        "time": "12:30",
         "activity": "מושב ראשון"
     },
     {
-        "time": "12:00",
-        "activity": "הפסקה וכיבוד"
+        "time": "13:10",
+        "activity": "מעבר למושב שני"
     },
     {
-        "time": "12:20",
-        "activity": "מושב שני"
-    },
-    {
-        "time": "13:00",
-        "activity": " ארוחת צהריים | סיור בתערוכה"
+        "time": "13:20",
+        "activity": " מושב שני"
     },
     {
         "time": "14:00",
-        "activity": "הרצאת מליאה"
+        "activity": "מעבר למליאה"
     },
     {
-        "time": "14:50",
-        "activity": "הכרזה על ענף מצטיין לשנ״ע 2023"
+        "time": "14:10",
+        "activity": "הרצאות מליאה"
     },
     {
-        "time": "15:00",
-        "activity": "סיכום מפקד"
+        "time": "15:10",
+        "activity": "דברי סיכום"
     },
     {
         "time": "15:20",
-        "activity": "סיום הכנס"
+        "activity": "סיום הכנס | כריך לדרך ונסיעה בטוחה הביתה"
     }]
     return (
         <div className='luz-container'>
