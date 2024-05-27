@@ -31,7 +31,7 @@ const Menu = (props) => {
   return (
     <div className='menu-container' ref={menuRef} >
       <div className="menu">
-        <div className='menu-item' onClick={() => {handleClose(); navigate("/home"); window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}}>
+        <div className='menu-item' onClick={() => {handleClose(); navigate("/"); window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}}>
           <img className='menu-item-icon' src={home} />
           <div className='menu-item-header'>ראשי</div>
         </div>

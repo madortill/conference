@@ -34,7 +34,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<><NavBar isOpen={isMenu} isDate={isDate} handleMenu={handleMenu}/><Menu isOpen={isMenu} handleMenu={handleMenu}/></>}>
-          <Route path="*" element={<MainPage handleDate={handleDate} targetDate={dateTimeAfterNumDays}/>}></Route>
+          <Route index element={<MainPage handleDate={handleDate} targetDate={dateTimeAfterNumDays}/>}></Route>
           <Route path="contact" element={<ContactInfo/>}></Route>
           <Route path="lectures" element={<ParticipantsPage/>}></Route>
           <Route path="registration" element={<Registration/>}></Route>

@@ -46,8 +46,8 @@ const NavBar = (props) => {
           <span></span>
         </div>
         {/* <img src={menu} className='menu-icon pointer' onClick={() => props.handleMenu()}/> */}
-        <div onClick={() => {navigate("/home"); window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className='title-conference pointer'>מלחמת חרבות ברזל</div>
-        {/* <img src={LOGO} onClick={() => {navigate("/home"); window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className='know-it-logo pointer'/> */}
+        <div onClick={() => {navigate("/"); window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className='title-conference pointer'>מלחמת חרבות ברזל</div>
+        {/* <img src={LOGO} onClick={() => {navigate("/"); window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className='know-it-logo pointer'/> */}
       </div>
       <Outlet></Outlet>
 
