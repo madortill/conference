@@ -111,7 +111,7 @@
     width: 8rem;
     font-size: 1.2rem;
     font-family: assistant;
-    background-color: #defb82;
+    background-color: #0094d4ba;
     border: none;
     border-radius: 15px;
     padding: 0.5rem 1rem;
@@ -121,7 +121,7 @@
 }
 
 .read-more-btn:hover {
-    background-color: #cce676;
+    background-color: #1799d1a0;
 }
 
 .main-content-container {
@@ -152,7 +152,7 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #defb82;
+    background: #1799d1a0;
 }
 
 .secondary-card {
@@ -196,7 +196,7 @@
     background-size: cover;
     flex-shrink: 0;
     margin: 2rem 0;
-    box-shadow: -1em 0 0 0 #defb82;
+    box-shadow: -1em 0 0 0 #0094d4ba;
 }
 
 .read-more-btn-secondary {
@@ -335,6 +335,6 @@
         width: 14rem;
         height: 14rem;
         margin: 1rem 1rem 1rem 0;
-        box-shadow: -2.5em 0 0 0 #defb82;
+        box-shadow: -2.5em 0 0 0 #0094d4ba;
     }
 }
