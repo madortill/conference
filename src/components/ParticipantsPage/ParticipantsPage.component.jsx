@@ -34,13 +34,40 @@ const ParticipantsPage = () => {
     },
     {
         "img": main2,
-        "name": 'אלעד דרמון | מנכ"ל Digital Culture - תרבות דיגיטלית',
+        "name": 'רס״ן עינת יונתן אש | רמ״ד הערכה חיל אוויר',
         "topic": "העוצמה של הבינה ",
         "description": "כלים מעשיים לשימוש בטכנולוגיה.",
         "full-text": "חקר השינויים וההזדמנויות הרב-גוניות שהשילוב של בינה מלאכותית מכניס לאקדמיה, מעצב מחדש את הלמידה, המחקר ועתיד הפצת הידע.",
         "website": "https://www.digitalculture.co.il/",
         "facebook": "https://www.facebook.com/digitalculture.co.il/?ref=embed_page"
-    }]
+    },
+    {
+        // "img": main3,
+        "name": 'סא״ל יובל לייקין | רע״ן הדרכה אמ״ן',
+        "topic": "העוצמה של הבינה ",
+        "description": "כלים מעשיים לשימוש בטכנולוגיה.",
+        "full-text": "חקר השינויים וההזדמנויות הרב-גוניות שהשילוב של בינה מלאכותית מכניס לאקדמיה, מעצב מחדש את הלמידה, המחקר ועתיד הפצת הידע.",
+        "website": "https://www.digitalculture.co.il/",
+        "facebook": "https://www.facebook.com/digitalculture.co.il/?ref=embed_page"
+    },
+    {
+        // "img": main4,
+        "name": 'אל״מ (במיל׳) צביקה וולק',
+        "topic": "העוצמה של הבינה ",
+        "description": "כלים מעשיים לשימוש בטכנולוגיה.",
+        "full-text": "חקר השינויים וההזדמנויות הרב-גוניות שהשילוב של בינה מלאכותית מכניס לאקדמיה, מעצב מחדש את הלמידה, המחקר ועתיד הפצת הידע.",
+        "website": "https://www.digitalculture.co.il/",
+        "facebook": "https://www.facebook.com/digitalculture.co.il/?ref=embed_page"
+    },,
+    {
+        // "img": main5,
+        "name": 'ד״ר אמיר גפן',
+        "topic": "העוצמה של הבינה ",
+        "description": "כלים מעשיים לשימוש בטכנולוגיה.",
+        "full-text": "חקר השינויים וההזדמנויות הרב-גוניות שהשילוב של בינה מלאכותית מכניס לאקדמיה, מעצב מחדש את הלמידה, המחקר ועתיד הפצת הידע.",
+        "website": "https://www.digitalculture.co.il/",
+        "facebook": "https://www.facebook.com/digitalculture.co.il/?ref=embed_page"
+    },]
 
     const SEATS = [{
         "img": gila,
