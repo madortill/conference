@@ -30,7 +30,7 @@ const Registration = () => {
         async ({ email, name, id, level, phone, seat1, seat2, unit, role, type, bus, bahad }) => {
             try {
                 const response = await fetch(
-                    'https://docs.google.com/forms/d/e/1FAIpQLSdMtLvbtHrp7MyuVdkbna_wTaUYvZBgXH4FAJrPYxHXkFgMKQ/viewform?usp=pp_url' +
+                    'https://docs.google.com/forms/d/e/1FAIpQLSdMtLvbtHrp7MyuVdkbna_wTaUYvZBgXH4FAJrPYxHXkFgMKQ/viewform?usp=sf_link' +
                     new URLSearchParams({
                         'entry.343054181': name ?? '',
                         'entry.1410981834': id ?? '',
