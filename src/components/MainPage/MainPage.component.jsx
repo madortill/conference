@@ -75,14 +75,13 @@ const MainPage = (props) => {
                             </motion.div>
                         </div>
                     </div>
-                    <motion.div ref={motionRefTimer} style={{ opacity: isInViewTimer ? 1 : 0, transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1)" }}>
-                        <CountdownTimer targetDate={props.targetDate} />
-                    </motion.div>
                 </div>
             </span>
             <span className='section3 section'>
                 <div className='black-section2'>
-                    <ParticipantsPreview></ParticipantsPreview>
+                    <motion.div ref={motionRefTimer} style={{ opacity: isInViewTimer ? 1 : 0, transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1)" }}>
+                        <CountdownTimer targetDate={props.targetDate} />
+                    </motion.div>
                 </div>
                 <SquareDetails></SquareDetails>
             </span>
