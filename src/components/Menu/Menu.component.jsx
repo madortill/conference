@@ -34,10 +34,6 @@ const Menu = (props) => {
           <img className='menu-item-icon' src={home} />
           <div className='menu-item-header'>ראשי</div>
         </div>
-        <div className='menu-item' onClick={() => {handleClose(); navigate("/lectures"); window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}}>
-          <img className='menu-item-icon' src={man} />
-          <div className='menu-item-header'> המרצים והמרצות</div>
-        </div>
         <div className='menu-item'  onClick={() => {handleClose(); navigate("/registration"); window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}}>
           <img className='menu-item-icon' src={form} />
           <div className='menu-item-header'>הרשמה - חינם!</div>

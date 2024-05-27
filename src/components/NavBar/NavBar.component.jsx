@@ -35,7 +35,7 @@ const NavBar = (props) => {
     <div className="nav-bar">
       <div className="split-color nav-bar-container">
       <motion.div style={{ opacity: isInViewDate ? 1 : 0, transition: "all 0.2s cubic-bezier(0.17, 0.55, 0.55, 1)"}}>
-        <h2 className='header-date'>8.11.2023</h2>
+        <h2 className='header-date'>19.6.2024</h2>
         </motion.div>
       </div>
       <div className='icon-container nav-bar-container'>
