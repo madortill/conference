@@ -92,7 +92,7 @@ const Registration = () => {
                 <p className='registration-text'>ההרשמה מיועדת לאנשים העוסקים בפיתוח הדרכה בצבא, בתעשייה, באקדמיה ולמנהלי
                     הדרכה.</p>
                 <p className='registration-text'>יש לוודא קבלת מייל אישור הרשמה עם פרטי ההרצאות המבוקשות. במידה ולא התקבלה הודעה יש לבדוק בתיבת הספאם או לפנות אלינו במייל:</p>
-                <a className='registration-text' href="mailto:know.it.till@gmail.com">know.it.till@gmail.com</a>
+                <a className='registration-text' href="mailto:evaluation.confe@gmail.com">evaluation.confe@gmail.com</a>
                 <Form
                     form={form}
                     onFinish={onFinish}

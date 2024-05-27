@@ -7,7 +7,7 @@ const ContactInfo = () => {
       {/* <h1 className='contact-header'>צור קשר</h1> */}
       <div className='black-contact'>
         <h3 className='white-text contact-txt'>מוזמנים לפנות אלינו במייל:</h3>
-        <a className='white-text mail' href="mailto:know.it.till@gmail.com">know.it.till@gmail.com</a>
+        <a className='white-text mail' href="mailto:evaluation.confe@gmail.com">evaluation.confe@gmail.com</a>
       </div>
     </div>
   );
