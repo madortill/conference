@@ -7,7 +7,7 @@ const Confirmation = () => {
         <div className='confirmation-container'>
             <div className='confirmation-card'>
                 <h1 className='confirmation-title'>אנא בדקו שקיבלתם מייל אישור.</h1>
-                <h2 className='confirmation-text'>לשאלות: <a className='mail' href="mailto:evaluation.confe@gmail.com">know.it.till@gmail.com</a></h2>
+                <h2 className='confirmation-text'>לשאלות: <a className='mail' href="mailto:evaluation.confe@gmail.com">evaluation.confe@gmail.com</a></h2>
                 <button className='sign-btn confirmation-btn pointer' onClick={() => {navigate("/"); window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}}>חזרה לדף הראשי</button>
             </div>
         </div>
