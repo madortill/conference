@@ -1,4 +1,6 @@
 import './ContactInfo.styles.css'
+import war from '../../media/images/war-logo.png';
+import zahal from '../../media/images/zahal.png'
 
 const ContactInfo = () => {
 
@@ -10,6 +12,10 @@ const ContactInfo = () => {
         <div className='flex-container'>
           <h3 className='white-text contact-txt'>מוזמנים לפנות אלינו במייל:</h3>
           <a className='white-text mail' href="mailto:evaluation.confe@gmail.com">evaluation.confe@gmail.com</a>
+        </div>
+        <div className='flex-container-2'>
+          <img src={war} className='pics'/>
+          <img src={zahal} className='pics' />
         </div>
       </div>
     </div>

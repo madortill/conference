@@ -40,6 +40,16 @@
     font-weight: 400;
 }
 
+.flex-container-2 {
+    position: relative;
+    bottom: 1vh;
+    left: 38vw;
+}
+
+.pics {
+    width: 3rem;
+}
+
 @media only screen and (min-width: 768px) {
     .contact-info {
         margin-top: 10rem;
@@ -75,5 +85,15 @@
     .flex-container {
         justify-content: space-evenly;
         flex-direction: row;
+    }
+
+    .flex-container-2 {
+        position: relative;
+        bottom: 1vh;
+        left: 45vw;
+    }
+
+    .pics {
+        width: 6rem;
     }
 }
