@@ -11,7 +11,8 @@ import Pnina from '../../media/images/people/pnina.jpeg';
 import YuvalL from '../../media/images/people/yuvalL.jpeg';
 import Zvika from '../../media/images/people/zvika.jpeg';
 import Raheli from "../../media/images/people/raheli.jpeg";
-import TalB from '../../media/images/people/talB.jpeg'
+import TalB from '../../media/images/people/talB.jpeg';
+import Isca from '../../media/images/people/isca.jpeg'
 
 const ParticipantsPreview = () => {
     const navigate = useNavigate();
@@ -19,7 +20,7 @@ const ParticipantsPreview = () => {
         {
             // "src": gila,
             "name": "אל״מ מיקי אלמקאייס | מפקד בה״ד 10, חיל הרפואה",
-            "topic": "הובלת מאמץ הלמידה במלחמה, הטמעת לקחים חיילים מלחימה להכשרות בבה״ד",
+            "topic": "הובלת מאמץ הלמידה במלחמה, הטמעת לקחים חיליים מלחימה להכשרות בבה״ד",
             "font-size": "1rem",
         },
         {
@@ -65,9 +66,9 @@ const ParticipantsPreview = () => {
             "font-size": "1rem",
         },
         {
-            /// "src": yael,
+            "src": Isca,
             "name": `יסכה רוטשילד מפקדת טייסת חופ"ה והדס גולבר קצינת חופ"ה בית ספר לטיסה`,
-            "topic": "הערכת הדרך- בניית טופס הערכת גיחה בקורס טיס",
+            "topic": "הערכת הדרך- תהליך בניית טופס הערכת גיחה בקורס טיס",
             "font-size": "1rem",
         },
         {
