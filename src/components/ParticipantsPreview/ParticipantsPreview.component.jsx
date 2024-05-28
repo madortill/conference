@@ -86,7 +86,7 @@ const ParticipantsPreview = () => {
         {
             "src": Raheli,
             "name": "רחל פינטו",
-            "topic": "ארגון מע״א/עריך",
+            "topic": "ארגון מע/אריך",
             "font-size": "1rem",
         },
         {
