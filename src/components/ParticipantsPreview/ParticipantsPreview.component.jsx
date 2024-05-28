@@ -9,7 +9,8 @@ import OriG from '../../media/images/people/oriG.jpeg';
 import OritB from '../../media/images/people/oritB.jpeg';
 import Pnina from '../../media/images/people/pnina.jpeg';
 import YuvalL from '../../media/images/people/yuvalL.jpeg';
-import Zvika from '../../media/images/people/zvika.jpeg'
+import Zvika from '../../media/images/people/zvika.jpeg';
+import Raheli from "../../media/images/people/raheli.jpeg";
 
 const ParticipantsPreview = () => {
     const navigate = useNavigate();
@@ -81,9 +82,9 @@ const ParticipantsPreview = () => {
             "font-size": "1rem",
         },
         {
-            // "src": ,
-            "name": `רחל פינטו`,
-            "topic": ``,
+            "src": Raheli,
+            "name": "רחל פינטו",
+            "topic": "ארגון מא/עריך",
             "font-size": "1rem",
         },
         {

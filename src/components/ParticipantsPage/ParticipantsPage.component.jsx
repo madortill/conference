@@ -9,7 +9,8 @@ import OriG from '../../media/images/people/oriG.jpeg';
 import OritB from '../../media/images/people/oritB.jpeg';
 import Pnina from '../../media/images/people/pnina.jpeg';
 import YuvalL from '../../media/images/people/yuvalL.jpeg';
-import Zvika from '../../media/images/people/zvika.jpeg'
+import Zvika from '../../media/images/people/zvika.jpeg';
+import Raheli from "../../media/images/people/raheli.jpeg";
 import ParticipantCard from '../ParticipantCard/ParticipantCard.component';
 
 
@@ -104,11 +105,15 @@ const ParticipantsPage = () => {
         "full-text": "מצורך בלמידה ושיתוף בין טייסות למערכת למידה מבצעית וניהול השינוי הארגוני.",
     },
     {
-        // "img": dana,
+        "img": Raheli,
         "name": "רחל פינטו",
-        "topic": "",
-        "description": "",
-        "full-text": ""
+        "topic": "ארגון מא/עריך",
+        "description": `מנהלת פרויקט הדיגיטלית, למשרדי ממשלה והרשויות המקומיות.
+        בתפקידה האחרון בצה"ל – מפקדת טייסת חופ"ה בבית הספר לטיסה ומובילת מיזם ביס"ט דיגיטלי.
+        מומחית ללמידה, מפתחת הדרכה בכירה, מובילת שינויים ויזמית בנשמה. 
+        מחברת בין למידה, טכנולוגיה ואנשים לעבר השגת אפקטיביות ארגונית ועסקית.`,
+        "full-text": `באם אתם רוצים ללמוד כיצד ארגון יכול לגדול, להתפתח ולשגשג לאורך זמן, בשיטיות וביד מכוונת- זה המושב עבורכם. 
+        אגע במודל, ערכים, גישה וכללים להערכת אפקטיביות הארגון, בקבלת החלטות מבוססות נתונים והמשגת התובנות הדירקטיבה לאנשים. בבחינת רעיון מסדר להמשך עשייה ויצירה משותפים.`
     },
     {
         // "img": nir,
