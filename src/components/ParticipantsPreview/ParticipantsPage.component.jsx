@@ -165,12 +165,6 @@ const ParticipantsPage = () => {
                         </div>
                     ))}
                 </div>
-
-                {/* <h1 className='participants-title'>תערוכת EXPO</h1>
-                <div className='exhibition-container'>
-                    <Exhibition></Exhibition>
-                </div> */}
-
             </div>
             <ContactInfo></ContactInfo>
         </div>
