@@ -263,7 +263,7 @@ const Registration = () => {
                         </Form.Item>
                         <Form.Item
                             className='form-item'
-                            name="model"
+                            name="other"
                             label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>אם עניתם אחר, מה הבקשה?</label>}
                             rules={[{ required: false, message: 'האם יש לכם בקשה מיוחדת למזון?' }]}
                         >
