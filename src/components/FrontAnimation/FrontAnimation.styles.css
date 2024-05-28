@@ -7,8 +7,6 @@
 
 .item {
     position: absolute;
-
-    /* top: 50%; */
 }
 
 
@@ -210,16 +208,16 @@
 
     .item1 {
         left: 0%;
-        top: 22%;
-        width: 17rem;
-        height: 17rem;
+        top: 25%;
+        width: 22rem;
+        height: 23rem;
         transform: rotate(-180deg);
         /* animation: throw1 2s cubic-bezier(0, 0, 0.28, 0.94) forwards; */
     }
 
     .item2 {
         left: 17%;
-        top: 4%;
+        top: 7%;
         width: 25rem;
         height: 25rem;
         transform: rotate(100deg);
@@ -228,7 +226,7 @@
 
     .item3 {
         left: 12%;
-        top: 45%;
+        top: 52%;
         width: 27rem;
         height: 27rem;
         transform: rotate(100deg);
@@ -236,10 +234,10 @@
     }
 
     .item4 {
-        left: 35%;
+        left: 34%;
         top: 35%;
-        width: 22rem;
-        height: 22rem;
+        width: 23rem;
+        height: 24rem;
         transform: rotate(-50deg);
         /* animation: throw4 2s cubic-bezier(0, 0, 0.28, 0.94) forwards; */
     }

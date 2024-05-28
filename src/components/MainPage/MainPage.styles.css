@@ -267,7 +267,7 @@
     }
 
     .main-header {
-        font-size: 3rem;
+        font-size: 4rem;
         width: 70%;
         font-weight: 400;
         text-align: right;
@@ -291,7 +291,7 @@
         border-radius: 15px;
         font-size: 2rem;
         font-family: assistant;
-        padding: 0.5rem 1rem;
+        padding: 1rem 1.75rem;
     }
 
     .header {
