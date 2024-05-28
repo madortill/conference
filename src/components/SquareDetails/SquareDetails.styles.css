@@ -79,4 +79,10 @@
         vertical-align: middle;
     }
 
+    .link {
+        width: 3vw;
+        padding-bottom: 2.5vh;
+        cursor: pointer;
+    }
+
 }
