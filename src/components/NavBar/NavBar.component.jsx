@@ -1,6 +1,6 @@
 import './NavBar.styles.css'
 import menu from '../../media/images/menu.png';
-import LOGO from '../../media/images/title.svg';
+import LOGO from '../../media/images/logo-black.svg';
 import { motion } from "framer-motion";
 import { useNavigate } from 'react-router-dom';
 import { Outlet } from 'react-router-dom';
