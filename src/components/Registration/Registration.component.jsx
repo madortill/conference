@@ -69,6 +69,7 @@ const Registration = () => {
                 //     message: 'Error Occured',
                 //     duration: 0,
                 //   });
+                console.log(e)
                 api.error({
                     message: e.message,
                 });

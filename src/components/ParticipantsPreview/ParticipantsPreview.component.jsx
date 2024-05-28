@@ -2,107 +2,82 @@ import './ParticipantsPreview.styles.css'
 import { useNavigate } from 'react-router-dom';
 import PersonPreview from '../PersonPreview/PersonPreview.component';
 import arrow from '../../media/images/arrow.png';
-import eliran from '../../media/images/people/eliran.png';
-import yael from '../../media/images/people/yael.jpg'
-import erik from '../../media/images/people/erik.jpg';
-import gila from '../../media/images/people/gila.jpg';
-import daniel from '../../media/images/people/daniel_hackathon.jpg';
-import snir from '../../media/images/people/snir.jpg';
-import adi from '../../media/images/people/mia.png';
-import yaniv from '../../media/images/people/yaniv.jpg';
-import yonatan from '../../media/images/people/yonatan.jpeg';
-import aviv from '../../media/images/people/aviv.jpg';
-import dana from '../../media/images/people/dana.png';
-import nir from '../../media/images/people/nir.jpg';
-import orit from '../../media/images/people/orit.jpg';
-import nethanel from '../../media/images/people/nethanel.jpg';
-import eden from '../../media/images/people/eden.png';
-import leaKeren from '../../media/images/people/lea+karan.png';
+import AmirG from '../../media/images/people/AmirGefen.jpg';
+import AlmogC from '../../media/images/people/almogC.jpeg';
+import Alona from '../../media/images/people/alona.jpeg';
+import OriG from '../../media/images/people/oriG.jpeg';
+import OritB from '../../media/images/people/oritB.jpeg';
+import Pnina from '../../media/images/people/pnina.jpeg';
+import YuvalL from '../../media/images/people/yuvalL.jpeg';
 
 const ParticipantsPreview = () => {
     const navigate = useNavigate();
     const PEOPLE = [
         {
-            "src": gila,
-            "name": "פרופ' גילה קורץ",
-            "topic": "אבולוציה אקדמאית",
+            // "src": gila,
+            "name": "אל״מ מיקי אלמקאייס | מפקד בה״ד 10, חיל הרפואה",
+            "topic": "הובלת מאמץ הלמידה במלחמה, הטמעת לקחים חיילים מלחימה להכשרות בבה״ד",
             "font-size": "1rem",
         },
         {
-            "src": adi,
-            "name": "עדי ליבנה",
-            "topic": "מידה שמייצרת כוכבים בעיניים",
+            // "src": adi,
+            "name": 'רס״ן עינת יונתן אש | רמ״ד הערכה חיל אוויר',
+            "topic": "BI ככלי להערכת הדזרכה וקבלת החלטות",
         },
         {
-            "src": orit,
-            "name": 'אורית ברוידס',
-            "topic": "חדשנות: איך להישאר רלוונטים בעולם משתנה?",
+            "src": YuvalL,
+            "name": 'סא״ל יובל לייקין | רע״ן הדרכה אמ״ן',
+            "topic": "הדרכה תחת אש",
         },
         {
-            "src": eliran,
-            "name": "אלירן שקולניק",
-            "topic": "המהפכה המלאכותית",
+            // "src": eliran,
+            "name": 'אל״מ (במיל׳) צביקה וולק',
+            "topic": "על תהליך הערכת הקרבות ב7/10",
         },
         {
-            "src": yael,
-            "name": "יעל פלד",
-            "topic": "ניצחון טכני",
+            "img": AmirG,
+            "name": 'ד״ר אמיר גפן',
+            "topic": " 'מי הזיז את הבינה שלי'- הערכה בעידן הבינה המלאכותית.",
         },
         {
-            "src": erik,
-            "name": "אריק אינגבר",
-            "topic": "AI works for me",
-        },
-        // {
-        //     "src": daniel,
-        //     "name": "דניאל אנדרסון",
-        //     "topic": "שיטת Agile בתהליכי למידה",
-        // },
-        // {
-        //     "src": snir,
-        //     "name": 'פיינשטיין שניר',
-        //     "topic": "הטמעת תוצרי הדרכה",
-        // },
-        {
-            "src": yaniv,
-            "name": "יניב קרמר",
-            "topic": "משאבי אנוש בעולם החדש",
-        },
-        // {
-        //     "src": yonatan,
-        //     "name": "יונתן חצור",
-        //     "topic": "איך לגרום לאחרים להזיז הרים",
-        // },
-        {
-            "src": dana,
-            "name": "דנה הורוביץ",
-            "topic": "פורמולת S4",
+            "img": Pnina,
+            "name": `רס"ן (במיל') פנינה נוימן`,
+            "topic": "מי מפחד (למדוד) מיומנויות רכות?",
         },
         {
-            "src": nir,
-            "name": 'ניר כהן',
-            "topic": "מגמגום לדיבור",
+            "img": OritB,
+            "name": "הגב' אורית ברוידס",
+            "topic": "הערכת הדרכה כמחזקת תחושת מסוגלות",
         },
         {
-            "src": nethanel,
-            "name": 'נתנאל רייכר',
-            "topic": "כיצד מעשירים את תהליכי ההדרכה ומגשרים בין ההדרכה לתהליכי הליווי בביצוע?",
+            "img": AlmogC,
+            "name": `רס"ל (במיל') אלמוג כהן ואע"צ אלונה צנטי`,
+            "topic": "הערכה 360°- ככה עושים את זה נכון.",
         },
         {
-            "src": eden,
-            "name": 'עדן ביבס',
-            "topic": "איך להשתמש נכון בצ'אט GPT?",
+            /// "img": yael,
+            "name": `יסכה רוטשילד מפקדת טייסת חופ"ה והדס גולבר קצינת חופ"ה בית ספר לטיסה.`,
+            "topic": "הערכת הדרך- בניית טופס הערכת גיחה בקורס טיס",
         },
         {
-            "src": leaKeren,
-            "name": 'ליאה אפגין וקארן קמנצקי',
-            "topic": "מכפיל כוח",
-            "font-size": "1rem",
+            // "img": yaniv,
+            "name": "",
+            "topic": "הערכת הדרכה בקמפוס הדיגיטלי",
         },
         {
-            "src": aviv,
-            "name": "אביב ואנונו",
-            "topic": "אביב ואנונו | בקיצור, בואו נפתח הדרכה בAI",
+            "img": OriG,
+            "name": `רס"ן אודי גוברין`,
+            "topic": `למידה מבצעית- מש"ל`,
+        },
+        {
+            // "img": ,
+            "name": `רחל פינטו`,
+            "topic": ``,
+        },
+        {
+            // "img": nir,
+            "name": `עו"ד משה שוקרי, ר' תחום הערכת הדרכה באגף ההדרכה, משטרת ישראל`,
+            "topic": "הערכת הדרכה – הדור הבא",
         }
         
     ]
