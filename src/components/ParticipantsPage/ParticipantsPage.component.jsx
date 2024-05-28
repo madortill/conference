@@ -108,7 +108,7 @@ const ParticipantsPage = () => {
     {
         "img": Raheli,
         "name": "רחל פינטו",
-        "topic": "ארגון מא/עריך",
+        "topic": "ארגון מע״א/עריך",
         "description": `מנהלת פרויקט הדיגיטלית, למשרדי ממשלה והרשויות המקומיות.
         בתפקידה האחרון בצה"ל – מפקדת טייסת חופ"ה בבית הספר לטיסה ומובילת מיזם ביס"ט דיגיטלי.
         מומחית ללמידה, מפתחת הדרכה בכירה, מובילת שינויים ויזמית בנשמה. 
@@ -138,7 +138,7 @@ const ParticipantsPage = () => {
         <div className='participants-page'>
             {isCard ? <ParticipantCard closeReadMore={closeReadMore} infoObj={objRef.current}></ParticipantCard> : null}
             <div className='main-container'>
-                <h1 className='participants-title'>מרצי מליאה</h1>
+                <h1 className='participants-title'>הרצאות מליאה</h1>
                 <div className='dark-card-container'>
                     {MAIN_INFO.map((element, index) => (
                         <div className='dark-card' key={index}>

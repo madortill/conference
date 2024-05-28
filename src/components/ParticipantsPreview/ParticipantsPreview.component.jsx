@@ -59,7 +59,7 @@ const ParticipantsPreview = () => {
             "font-size": "1rem",
         },
         {
-            "src": AlmogC,
+            "srcs": [AlmogC, Alona],
             "name": `רס"ל (במיל') אלמוג כהן ואע"צ אלונה צנטי`,
             "topic": "הערכה 360°- ככה עושים את זה נכון",
             "font-size": "1rem",
@@ -85,7 +85,7 @@ const ParticipantsPreview = () => {
         {
             "src": Raheli,
             "name": "רחל פינטו",
-            "topic": "ארגון מא/עריך",
+            "topic": "ארגון מע״א/עריך",
             "font-size": "1rem",
         },
         {
