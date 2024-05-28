@@ -1,9 +1,9 @@
 import { useRef } from 'react'
 import './FrontAnimation.styles.css'
-import headphones from '../../media/images/headphones.svg'
-import vr from '../../media/images/vr.svg'
-import laptop from '../../media/images/laptop.svg'
-import hologram from '../../media/images/hologram.svg'
+import books from '../../media/images/books.svg'
+import brain from '../../media/images/brain.svg'
+import comp from '../../media/images/comp.svg'
+import target from '../../media/images/target.svg'
 
 const FrontAnimation = () => {
     const itemRef1 = useRef();
@@ -13,19 +13,19 @@ const FrontAnimation = () => {
     const itemRef5 = useRef();
     const ITEMS = [
         {
-            "link": headphones,
+            "link": books,
             "ref": itemRef1
         },
         {
-            "link": laptop,
+            "link": brain,
             "ref": itemRef2
         },
         {
-            "link": hologram,
+            "link": comp,
             "ref": itemRef3
         },
         {
-            "link": vr,
+            "link": target,
             "ref": itemRef4
         }
     ]

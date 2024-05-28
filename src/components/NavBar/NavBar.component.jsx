@@ -1,6 +1,6 @@
 import './NavBar.styles.css'
 import menu from '../../media/images/menu.png';
-import LOGO from '../../media/images/KNOWIT-LOGO.svg';
+import LOGO from '../../media/images/title.svg';
 import { motion } from "framer-motion";
 import { useNavigate } from 'react-router-dom';
 import { Outlet } from 'react-router-dom';
@@ -46,8 +46,8 @@ const NavBar = (props) => {
           <span></span>
         </div>
         {/* <img src={menu} className='menu-icon pointer' onClick={() => props.handleMenu()}/> */}
-        <div onClick={() => {navigate("/"); window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className='title-conference pointer'>מלחמת חרבות ברזל</div>
-        {/* <img src={LOGO} onClick={() => {navigate("/"); window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className='know-it-logo pointer'/> */}
+        {/* <div onClick={() => {navigate("/"); window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className='title-conference pointer'>מלחמת חרבות ברזל</div> */}
+        <img src={LOGO} onClick={() => {navigate("/"); window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className='know-it-logo pointer'/>
       </div>
       <Outlet></Outlet>
 

@@ -45,10 +45,6 @@ const MainPage = (props) => {
                 </div>
                 <div className='black-section1' ref={motionRefBlack}>
                     <FrontAnimation></FrontAnimation>
-                    {/* <div className='throw-object'></div> */}
-                    {/* <div className='blue-half-circle'></div>
-                    <div className='blue-circle'></div> */}
-                    {/* <div className='try'>...</div> */}
                 </div>
             </span>
 
@@ -66,9 +62,7 @@ const MainPage = (props) => {
                     </div>
 
                     <div className='text-pic-section text-pic-section2'>
-                        {/* <div className='logos'> */}
                         <div className='round-logo' style={{ backgroundImage: `url(${kirya})` }}></div>
-                        {/* </div> */}
 
                         <div className='text-section text-section2'>
                             <motion.div ref={motionRef2} style={{ transform: isInView2 ? "none" : "translateX(-300px)", opacity: isInView2 ? 1 : 0, transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1)" }}>
