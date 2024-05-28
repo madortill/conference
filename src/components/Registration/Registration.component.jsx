@@ -25,13 +25,12 @@ const Registration = () => {
     ]
 
     const onFinish = useCallback(
-        async ({ email, name, id, level, phone, seat1, seat2, unit, role, bahad, car, model, food, other}) => {
+        async ({ email, name, level, phone, seat1, seat2, unit, role, bahad, car, model, food, other}) => {
             try {
                 const response = await fetch(
-                    'https://docs.google.com/forms/d/e/1FAIpQLSdMtLvbtHrp7MyuVdkbna_wTaUYvZBgXH4FAJrPYxHXkFgMKQ/formResponse' +
+                    'https://docs.google.com/forms/d/e/1FAIpQLSdMtLvbtHrp7MyuVdkbna_wTaUYvZBgXH4FAJrPYxHXkFgMKQ/viewform?' +
                     new URLSearchParams({
                         'entry.343054181': name ?? '',
-                        'entry.1410981834': id ?? '',
                         'entry.1818583619': level ?? '',
                         'entry.848216944': phone ?? '',
                         'entry.525075253': seat1,
@@ -108,14 +107,6 @@ const Registration = () => {
                             name="name"
                             label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>שם מלא</label>}
                             rules={[{ required: true, message: 'אנא הכניסו את שמכם.' }]}
-                        >
-                            <Input className='form-input' />
-                        </Form.Item>
-                        <Form.Item
-                            className='form-item'
-                            name="id"
-                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>ת.ז. / מספר אישי (לצורך כניסה לבסיס)</label>}
-                            rules={[{ required: true, message: 'אנא הכניסו את תעודת הזהות או המספר האישי שלכם.' }]}
                         >
                             <Input className='form-input' />
                         </Form.Item>
