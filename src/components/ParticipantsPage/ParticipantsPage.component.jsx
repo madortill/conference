@@ -12,7 +12,9 @@ import YuvalL from '../../media/images/people/yuvalL.jpeg';
 import Zvika from '../../media/images/people/zvika.jpeg';
 import Raheli from "../../media/images/people/raheli.jpeg";
 import TalB from '../../media/images/people/talB.jpeg';
-import Isca from '../../media/images/people/isca.jpeg'
+import Isca from '../../media/images/people/isca.jpeg';
+import Duo1 from '../../media/images/people/duo1.jpeg';
+import Duo2 from '../../media/images/people/duo2.jpeg';
 import ParticipantCard from '../ParticipantCard/ParticipantCard.component';
 
 
@@ -78,7 +80,7 @@ const ParticipantsPage = () => {
         "full-text": "בהרצאה נדבר על הקשר בין הערכה פנימית של החניך לחיזוק המסוגלות האישית ועל הדרך בה נסייע לחניכים להעלות את תחושת המסוגלות שלהם לביצוע התפקיד באמצעות תהליכי הערכה."
     },
     {
-        "img": AlmogC,
+        "img": Duo1,
         "name": `רס"ל (במיל') אלמוג כהן ואע"צ אלונה צנטי`,
         "topic": "הערכה 360°- ככה עושים את זה נכון",
         "description": `אלמוג כהן, בת 29, במילואים בקריית ההדרכה בתפקיד אחראית פיתוח הדרכה. בוגרת תואר ראשון במידענות וטכנולוגיות אינטרנט באונ' בר- אילן. בשירות הצבאי עסקה בארבעת עולמות ההדרכה- הערכה, ניהול, הוראה ופיתוח. 
@@ -119,7 +121,7 @@ const ParticipantsPage = () => {
         אגע במודל, ערכים, גישה וכללים להערכת אפקטיביות הארגון, בקבלת החלטות מבוססות נתונים והמשגת התובנות הדירקטיבה לאנשים. בבחינת רעיון מסדר להמשך עשייה ויצירה משותפים.`
     },
     {
-        // "img": nir,
+        "img": Duo2,
         "name": `עו"ד משה שוקרי, ר' תחום הערכת הדרכה באגף ההדרכה, משטרת ישראל + אלינה באנק, מנהלת פיתוח הדרכה, זכיין ההדרכה במכללה הלאומית לשוטרים`,
         "topic": "הערכת הדרכה – הדור הבא",
         "description": `23 שנים במשטרה, קצין חקירות בעברו, לקח חלק בפרשיות מוכרות כגון: הבנק למסחר, הסוסים הטרויאניים (ריגול תעשייתי). שימש כמפקד קורסים, מפתח הדרכה וקצין הדרכה סמפכ"ל.`,

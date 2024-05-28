@@ -12,7 +12,10 @@ import YuvalL from '../../media/images/people/yuvalL.jpeg';
 import Zvika from '../../media/images/people/zvika.jpeg';
 import Raheli from "../../media/images/people/raheli.jpeg";
 import TalB from '../../media/images/people/talB.jpeg';
-import Isca from '../../media/images/people/isca.jpeg'
+import Isca from '../../media/images/people/isca.jpeg';
+import Duo1 from '../../media/images/people/duo1.jpeg';
+import Duo2 from '../../media/images/people/duo2.jpeg';
+
 
 const ParticipantsPreview = () => {
     const navigate = useNavigate();
@@ -60,7 +63,7 @@ const ParticipantsPreview = () => {
             "font-size": "1rem",
         },
         {
-            "srcs": [AlmogC, Alona],
+            "src": Duo1,
             "name": `רס"ל (במיל') אלמוג כהן ואע"צ אלונה צנטי`,
             "topic": "הערכה 360°- ככה עושים את זה נכון",
             "font-size": "1rem",
@@ -90,7 +93,7 @@ const ParticipantsPreview = () => {
             "font-size": "1rem",
         },
         {
-            // "src": nir,
+            "src": Duo2,
             "name": `עו"ד משה שוקרי, ר' תחום הערכת הדרכה באגף ההדרכה, משטרת ישראל + אלינה באנק, מנהלת פיתוח הדרכה, זכיין ההדרכה במכללה הלאומית לשוטרים`,
             "topic": "הערכת הדרכה – הדור הבא",
             "font-size": "1rem",
