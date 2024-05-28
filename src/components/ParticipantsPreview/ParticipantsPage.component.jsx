@@ -11,6 +11,7 @@ import Pnina from '../../media/images/people/pnina.jpeg';
 import YuvalL from '../../media/images/people/yuvalL.jpeg';
 import Zvika from '../../media/images/people/zvika.jpeg';
 import Raheli from "../../media/images/people/raheli.jpeg";
+import TalB from '../../media/images/people/talB.jpeg'
 import ParticipantCard from '../ParticipantCard/ParticipantCard.component';
 
 
@@ -91,11 +92,11 @@ const ParticipantsPage = () => {
         "full-text": ""
     },
     {
-        // "img": yaniv,
-        "name": "",
-        "topic": "הערכת הדרכה בקמפוס הדיגיטלי",
-        "description": "",
-        "full-text": ''
+        "img": TalB,
+        "name": "טל בוזנאה ושרית צברי",
+        "topic": "קמפוס דיגיטלי כפלטפורמה להערכה",
+        "description": `אנחנו צוות ההטמעה המטכ"לי של מערכת הקמפוס הדיגיטלי, שמדריך, תומך ומלווה את  היחידות ובסיסי ההדרכה השונים במערכת.`,
+        "full-text": 'כיצד הקמפוס הדיגיטלי מאפשר לי לנהל הערכה אפקטיבית בלמידה.'
     },
     {
         "img": OriG,

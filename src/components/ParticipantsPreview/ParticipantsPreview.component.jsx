@@ -11,6 +11,7 @@ import Pnina from '../../media/images/people/pnina.jpeg';
 import YuvalL from '../../media/images/people/yuvalL.jpeg';
 import Zvika from '../../media/images/people/zvika.jpeg';
 import Raheli from "../../media/images/people/raheli.jpeg";
+import TalB from '../../media/images/people/talB.jpeg'
 
 const ParticipantsPreview = () => {
     const navigate = useNavigate();
@@ -70,9 +71,9 @@ const ParticipantsPreview = () => {
             "font-size": "1rem",
         },
         {
-            // "src": yaniv,
-            "name": "",
-            "topic": "הערכת הדרכה בקמפוס הדיגיטלי",
+            "src": TalB,
+            "name": "טל בוזנאה ושרית צברי",
+            "topic": "קמפוס דיגיטלי כפלטפורמה להערכה",
             "font-size": "1rem",
         },
         {
