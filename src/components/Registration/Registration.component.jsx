@@ -81,7 +81,7 @@ const Registration = () => {
     return (
         <>
             {isSubmited ? <Confirmation></Confirmation> : null}
-            {/* {contextHolder} */}
+            {contextHolder}
             <div className='form-container'>
 
                 <h1 className='participants-title' id="registrationTitle">הרשמה לכנס</h1>
@@ -98,7 +98,7 @@ const Registration = () => {
                         <Form.Item
                             className='form-item'
                             name="email"
-                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>אימייל:</label>}
+                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>אימייל</label>}
                             rules={[{ required: true, message: 'אנא הכניסו את המייל שלכם.' }]}
                         >
                             <Input className='form-input' />
@@ -106,7 +106,7 @@ const Registration = () => {
                         <Form.Item
                             className='form-item'
                             name="name"
-                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>שם מלא:</label>}
+                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>שם מלא</label>}
                             rules={[{ required: true, message: 'אנא הכניסו את שמכם.' }]}
                         >
                             <Input className='form-input' />
@@ -114,7 +114,7 @@ const Registration = () => {
                         <Form.Item
                             className='form-item'
                             name="id"
-                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>ת.ז. / מספר אישי (לצורך כניסה לבסיס):</label>}
+                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>ת.ז. / מספר אישי (לצורך כניסה לבסיס)</label>}
                             rules={[{ required: true, message: 'אנא הכניסו את תעודת הזהות או המספר האישי שלכם.' }]}
                         >
                             <Input className='form-input' />
@@ -122,7 +122,7 @@ const Registration = () => {
                         <Form.Item
                             className='form-item'
                             name="level"
-                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>דרגה (לאנשי צבא בלבד):</label>}
+                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>דרגה (לאנשי צבא בלבד)</label>}
                             rules={[{ required: false }]}
                         >
                             <Input className='form-input' />
@@ -130,7 +130,7 @@ const Registration = () => {
                         <Form.Item
                             className='form-item'
                             name="phone"
-                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>טלפון:</label>}
+                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>טלפון</label>}
                             rules={[{ required: true, message: 'אנא הכניסו את מספר הטלפון שלכם.' }]}
                         >
                             <Input className='form-input' />
@@ -138,7 +138,7 @@ const Registration = () => {
                         <Form.Item
                             className='form-item'
                             name="seat1"
-                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>מושב ראשון:</label>}
+                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>מושב ראשון</label>}
                             rules={[{ required: true, message: 'אנא בחרו מושב ראשון.' }]}
                         >
                             <Radio.Group>
@@ -154,7 +154,7 @@ const Registration = () => {
                         <Form.Item
                             className='form-item'
                             name="seat2"
-                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>מושב שני:</label>}
+                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>מושב שני</label>}
                             rules={[{ required: true, message: 'אנא בחרו מושב שני.' }]}
                         >
                             <Radio.Group>
@@ -168,7 +168,7 @@ const Registration = () => {
                         <Form.Item
                             className='form-item'
                             name="unit"
-                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>יחידה / ארגון:</label>}
+                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>ארגון  / יחידה</label>}
                             rules={[{ required: true, message: 'אנא הכניסו את שם הארגון / היחידה שלכם.' }]}
                         >
                             <Input className='form-input' />
@@ -176,7 +176,7 @@ const Registration = () => {
                         <Form.Item
                             className='form-item'
                             name="role"
-                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>תפקיד בארגון:</label>}
+                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>תפקיד בארגון</label>}
                             rules={[{ required: true, message: 'אנא הכניסו את תפקידכם בארגון.' }]}
                         >
                             <Input className='form-input' />
@@ -184,7 +184,7 @@ const Registration = () => {
                         <Form.Item
                             className='form-item'
                             name="type"
-                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>סוג ארגון:</label>}
+                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>סוג ארגון</label>}
                             rules={[{ required: true, message: 'אנא בחרו בסוג הארגון שלכם.' }]}
                         >
                             <Radio.Group>
@@ -203,40 +203,40 @@ const Registration = () => {
                             className='form-item form-select'
                             name="bahad"
                             label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>אם הינכם משרתים בקריית ההדרכה: בחרו בבה״ד שלכם.</label>}
-                            rules={[{ required: true, message: 'אנא בחרו בבה״ד שלכם. אם אינכם משרתים בקרית ההדרכה - בחרו באפשרות ״בחר״' }]}>
+                            rules={[{ required: false, message: 'אנא בחרו בבה״ד שלכם. אם אינכם משרתים בקרית ההדרכה - בחרו באפשרות ״בחר״' }]}>
                             <Select
-                                initialvalues={{
-                                    value: 'בחר',
-                                    label: 'בחר',
-                                }}
+                                // initialvalues={{
+                                //     value: 'בחר',
+                                //     label: 'בחר',
+                                // }}
 
                                 options={[{
                                     value: 'בחר',
                                     label: 'בחר',
                                 },
                                 {
-                                    value: '6',
+                                    value: 'בה״ד 6',
                                     label: 'בה״ד 6',
                                 },
                                 {
-                                    value: '7',
+                                    value: 'בה״ד 7',
                                     label: 'בה״ד 7',
                                 },
                                 {
-                                    value: '10',
+                                    value: 'בה״ד 10',
                                     label: 'בה״ד 10',
                                 },
                                 {
-                                    value: '11',
+                                    value: 'בה״ד 11',
                                     label: 'בה״ד 11',
                                 },
                                 {
-                                    value: '20',
-                                    label: 'בה״ד 20',
+                                    value: 'בה״ד 13',
+                                    label: 'בה״ד 13',
                                 },
                                 {
-                                    value: '13',
-                                    label: 'בה״ד 13',
+                                    value: 'בה״ד 20',
+                                    label: 'בה״ד 20',
                                 },
                                 {
                                     value: 'מפקדה',
@@ -253,14 +253,14 @@ const Registration = () => {
                         <Form.Item
                             className='form-item'
                             name="bus"
-                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>האם תרצו להירשם להסעה?ֿ | ההסעה תצא מחניון ״חנה וסע״ בתל אביב | פתיחת ההסעה תלויה בכמות הנרשמים.</label>}
+                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>האם תרצו להירשם להסעה?ֿ</label>}
                             rules={[{ required: true, message: 'האם תרצו להירשם להסעה?ֿ' }]}
                         >
                             <Radio.Group>
                                 <Space className='radio-container' direction="vertical">
                                     <Radio className='radio-btn' value="כן">כן</Radio>
                                     <Radio className='radio-btn' value="לא">לא</Radio>
-                                    <Radio className='radio-btn' value="עוד לא יודע">לא יודע עדיין</Radio>
+                                    <Radio className='radio-btn' value="לא יודע עדיין">לא יודע עדיין</Radio>
                                 </Space>
                             </Radio.Group>
                         </Form.Item>
