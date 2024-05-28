@@ -9,6 +9,7 @@ import OriG from '../../media/images/people/oriG.jpeg';
 import OritB from '../../media/images/people/oritB.jpeg';
 import Pnina from '../../media/images/people/pnina.jpeg';
 import YuvalL from '../../media/images/people/yuvalL.jpeg';
+import Zvika from '../../media/images/people/zvika.jpeg'
 
 const ParticipantsPreview = () => {
     const navigate = useNavigate();
@@ -30,7 +31,7 @@ const ParticipantsPreview = () => {
             "topic": "הדרכה תחת אש",
         },
         {
-            // "src": eliran,
+            "src": Zvika,
             "name": 'אל״מ (במיל׳) צביקה וולק',
             "topic": "על תהליך הערכת הקרבות ב7/10",
         },

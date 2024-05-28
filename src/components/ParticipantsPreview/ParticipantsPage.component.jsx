@@ -9,6 +9,7 @@ import OriG from '../../media/images/people/oriG.jpeg';
 import OritB from '../../media/images/people/oritB.jpeg';
 import Pnina from '../../media/images/people/pnina.jpeg';
 import YuvalL from '../../media/images/people/yuvalL.jpeg';
+import Zvika from '../../media/images/people/zvika.jpeg'
 import ParticipantCard from '../ParticipantCard/ParticipantCard.component';
 
 
@@ -40,9 +41,9 @@ const ParticipantsPage = () => {
     {
         // "img": main4,
         "name": 'אל״מ (במיל׳) צביקה וולק',
-        "topic": "על תהליך הערכת הקרבות ב7/10",
-        "description": "",
-        "full-text": "",
+        "topic": "7 באוקטובר- משמעויות לעולם הלמידה בזווית אישית",
+        "description": `אל"מ צביקה וולק, ראש צוות תל"ב באמ"ץ תוה"ד- מומחה בהטמעת מערכות ארגוניות, הערכה ושיפור ביצועים ארגוני, מנהל תוכנית הכשרה לנוער בסיכון.`,
+        "full-text": "בהרצאה יוצגו תוצרי הלימוד והחקר של אירועי ה7 לאוקטובר (המבוססים על שיחות עם למעלה מ100 מפקדים, לוחמים וחברי כיתות כוננת שהשתתפו בלחימה), יוצגו התובנות לעולם הלמידה ויינתנו המלצות על תהליכי הערכת ההדרכה בעקבות ובמהלך לחימה.",
     },
     {
         "img": AmirG,
@@ -103,11 +104,11 @@ const ParticipantsPage = () => {
         "full-text": "מצורך בלמידה ושיתוף בין טייסות למערכת למידה מבצעית וניהול השינוי הארגוני.",
     },
     {
-        // "img": yaniv,
+        // "img": dana,
         "name": "רחל פינטו",
         "topic": "",
         "description": "",
-        "full-text": ''
+        "full-text": ""
     },
     {
         // "img": nir,
