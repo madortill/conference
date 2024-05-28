@@ -28,7 +28,7 @@ const Registration = () => {
         async ({ email, name, level, phone, seat1, seat2, unit, role, bahad, car, model, food, other}) => {
             try {
                 const response = await fetch(
-                    'https://docs.google.com/forms/d/e/1FAIpQLSdMtLvbtHrp7MyuVdkbna_wTaUYvZBgXH4FAJrPYxHXkFgMKQ/formResponse?' +
+                    'https://docs.google.com/forms/d/e/1FAIpQLSdMtLvbtHrp7MyuVdkbna_wTaUYvZBgXH4FAJrPYxHXkFgMKQ/viewform?usp=sharing' +
                     new URLSearchParams({
                         'entry.343054181': name ?? '',
                         'entry.1818583619': level ?? '',
@@ -178,15 +178,16 @@ const Registration = () => {
                             label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>אם הינכם משרתים בקריית ההדרכה: בחרו בבה״ד שלכם.</label>}
                             rules={[{ required: false, message: 'אנא בחרו בבה״ד שלכם. אם אינכם משרתים בקרית ההדרכה - בחרו באפשרות ״בחר״' }]}>
                             <Select
-                                // initialvalues={{
-                                //     value: 'בחר',
-                                //     label: 'בחר',
-                                // }}
-
-                                options={[{
+                                initialvalues={{
                                     value: 'בחר',
                                     label: 'בחר',
-                                },
+                                }}
+
+                                options={[
+                                //     {
+                                //     value: 'בחר',
+                                //     label: 'בחר',
+                                // },
                                 {
                                     value: 'בה״ד 6',
                                     label: 'בה״ד 6',
