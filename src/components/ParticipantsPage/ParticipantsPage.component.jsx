@@ -2,13 +2,13 @@ import './ParticipantsPage.styles.css';
 import { useState, useRef } from 'react';
 import ContactInfo from '../ContactInfo/ContactInfo.component';
 import Exhibition from '../exhibition/Exhibition.component';
-import AmirG from 'src/media/images/people/AmirGefen.jpg';
-import AlmogC from 'src/media/images/people/almogC.jpeg';
-import Alona from 'src/media/images/people/alona.jpeg';
-import OriG from 'src/media/images/people/oriG.jpeg';
-import OritB from 'src/media/images/people/oritB.jpeg';
-import Pnina from 'src/media/images/people/pnina.jpeg';
-import YuvalL from 'src/media/images/people/yuvalL.jpeg';
+import AmirG from '../../media/images/people/AmirGefen.jpg';
+import AlmogC from '../../media/images/people/almogC.jpeg';
+import Alona from '../../media/images/people/alona.jpeg';
+import OriG from '../../media/images/people/oriG.jpeg';
+import OritB from '../../media/images/people/oritB.jpeg';
+import Pnina from '../../media/images/people/pnina.jpeg';
+import YuvalL from '../../media/images/people/yuvalL.jpeg';
 import ParticipantCard from '../ParticipantCard/ParticipantCard.component';
 
 
