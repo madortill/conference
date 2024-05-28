@@ -10,20 +10,18 @@ const Registration = () => {
     const [isSubmited, setIsSubmited] = useState(false);
     const [isConfirmed, setIsConfirmed] = useState(false);
 
-    const SEATS = [
-        "עדי ליבנה | למידה שמייצרת כוכבים בעיניים",
-        "אורית ברוידס | חדשנות: איך להישאר רלוונטים בעולם משתנה?",
-        "אלירן שקולניק | המהפכה המלאכותית",
-        "יעל פלד | ניצחון טכני",
-        "יניב קרמר | ניהול קריירה בשירות הAI - לא מה שחשבתם...",
-        "אריק אינגבר | AI works for me",
-        "דנה הורוביץ | יצירת סרטונים בקליק עם AI",
-        "ניר כהן | קווים מנחים בעיצוב חוויות והדרכות בטכנולוגיית XR (VR/AR)",
-        "נתנאל רייכר | כיצד מעשירים את תהליכי ההדרכה ומגשרים בין ההדרכה לתהליכי הליווי בביצוע?",
-        "עדן ביבס | איך להשתמש נכון בצ'אט GPT?",
-        "ליאה אפגין + קארן קמנצקי | מכפיל כוח",
-        "אביב ואנונו | בקיצור, בואו נפתח הדרכה בAI",
-        "אמיר רוזנצוייג | השיטה החדשה לאימונים והדרכה במציאות מדומה!"
+    const SEAT1 = [
+        `רס"ן (במיל') פנינה נוימן | מי מפחד (למדוד) מיומנויות רכות?`,
+        `הגב' אורית ברוידס | הערכת הדרכה כמחזקת תחושת מסוגלות`,
+        `רס"ל (במיל') אלמוג כהן ואע"צ אלונה צנטי | הערכה 360°- ככה עושים את זה נכון`,
+        `יסכה רוטשילד מפקדת טייסת חופ"ה והדס גולבר קצינת חופ"ה בית ספר לטיסה | הערכת הדרך- בניית טופס הערכת גיחה בקורס טיס`    
+    ]
+
+    const SEAT2 = [
+        `הערכת הדרכה בקמפוס הדיגיטלי`,
+        `רס"ן אודי גוברין | למידה מבצעית- מש"ל`,
+        `רחל פינטו | ארגון מא/עריך`,
+        `עו"ד משה שוקרי, ר' תחום הערכת הדרכה באגף ההדרכה, משטרת ישראל | הערכת הדרכה – הדור הבא`
     ]
 
     const onFinish = useCallback(
@@ -145,7 +143,7 @@ const Registration = () => {
                         >
                             <Radio.Group>
                                 <Space className='radio-container' direction="vertical">
-                                    {SEATS.map((name) => (
+                                    {SEAT1.map((name) => (
                                         <Radio key={name} className='radio-btn' value={name}>{name}</Radio>
                                     ))}
                                 </Space>
@@ -161,7 +159,7 @@ const Registration = () => {
                         >
                             <Radio.Group>
                                 <Space className='radio-container' direction="vertical">
-                                    {SEATS.map((name) => (
+                                    {SEAT2.map((name) => (
                                         <Radio key={name} className='radio-btn' value={name}>{name}</Radio>
                                     ))}
                                 </Space>
@@ -192,9 +190,9 @@ const Registration = () => {
                             <Radio.Group>
                                 <Space className='radio-container' direction="vertical">
                                     <Radio className='radio-btn' value="כוחות הבטחון">כוחות הבטחון</Radio>
-                                    <Radio className='radio-btn' value="תעשייה">תעשייה</Radio>
                                     <Radio className='radio-btn' value="צה״ל">צה״ל</Radio>
                                     <Radio className='radio-btn' value="ממשלתי">ממשלתי</Radio>
+                                    <Radio className='radio-btn' value="תעשייה">תעשייה</Radio>
                                     <Radio className='radio-btn' value="מוסדות חינוך">מוסדות חינוך</Radio>
                                     <Radio className='radio-btn' value="מוסדות אקדמיה">מוסדות אקדמיה</Radio>
                                     <Radio className='radio-btn' value="אחר">אחר</Radio>
@@ -215,10 +213,6 @@ const Registration = () => {
                                 options={[{
                                     value: 'בחר',
                                     label: 'בחר',
-                                },
-                                {
-                                    value: 'מפקדה',
-                                    label: 'מפקדה',
                                 },
                                 {
                                     value: '6',
@@ -245,6 +239,10 @@ const Registration = () => {
                                     label: 'בה״ד 13',
                                 },
                                 {
+                                    value: 'מפקדה',
+                                    label: 'מפקדה',
+                                },
+                                {
                                     value: 'חינוך',
                                     label: 'חינוך',
                                 }
@@ -262,7 +260,7 @@ const Registration = () => {
                                 <Space className='radio-container' direction="vertical">
                                     <Radio className='radio-btn' value="כן">כן</Radio>
                                     <Radio className='radio-btn' value="לא">לא</Radio>
-                                    <Radio className='radio-btn' value="עוד לא יודע">עוד לא יודע</Radio>
+                                    <Radio className='radio-btn' value="עוד לא יודע">לא יודע עדיין</Radio>
                                 </Space>
                             </Radio.Group>
                         </Form.Item>
