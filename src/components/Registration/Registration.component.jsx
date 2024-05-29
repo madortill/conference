@@ -13,7 +13,7 @@ const Registration = () => {
     const SEAT1 = [
         `רס"ן (במיל') פנינה נוימן | מי מפחד (למדוד) מיומנויות רכות`,
         `רס"ל (במיל') אלמוג כהן ואע"צ אלונה צנטי | הערכה 360°- ככה עושים את זה נכון`,
-        `עו"ד משה שוקרי, ר' תחום הערכת הדרכה באגף ההדרכה, משטרת ישראל | הערכת הדרכה – הדור הבא`,
+        `עו"ד משה שוקרי, ר' תחום הערכת הדרכה באגף ההדרכה, משטרת ישראל + אלינה באנק, מנהלת פיתוח הדרכה, זכיין ההדרכה במכללה הלאומית לשוטרים`,
         `טל בוזנאה ושרית צברי | קמפוס דיגיטלי כפלטפורמה להערכה`,
     ]
     
@@ -28,7 +28,7 @@ const Registration = () => {
         async ({ email, name, level, phone, seat1, seat2, unit, role, bahad, car, model, food, other}) => {
             try {
                 const response = await fetch(
-                    'https://docs.google.com/forms/d/e/1FAIpQLSdMtLvbtHrp7MyuVdkbna_wTaUYvZBgXH4FAJrPYxHXkFgMKQ/formResponse?' +
+                    'https://docs.google.com/forms/d/e/1FAIpQLSdMtLvbtHrp7MyuVdkbna_wTaUYvZBgXH4FAJrPYxHXkFgMKQ/viewform?' +
                     new URLSearchParams({
                         'entry.343054181': name ?? '',
                         'entry.1818583619': level ?? '',
