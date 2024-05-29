@@ -2,7 +2,7 @@ import './Luz.styles.css'
 
 const Luz = () => {
     const LUZ = [{
-        "time": "8:30",
+        "time": "9:00",
         "activity": "התכנסות | קפה ומאפה"
     },
     {
