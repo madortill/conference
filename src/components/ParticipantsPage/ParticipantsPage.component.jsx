@@ -18,6 +18,7 @@ import Duo2 from '../../media/images/people/duo2.jpeg';
 import Moshe from '../../media/images/people/moshe.jpeg';
 import Alina from '../../media/images/people/alina.jpeg';
 import Einat from '../../media/images/people/einat.jpeg';
+import zahal from '../../media/images/zahal.png'
 import ParticipantCard from '../ParticipantCard/ParticipantCard.component';
 
 
@@ -25,8 +26,8 @@ const ParticipantsPage = () => {
     const [isCard, setIsCard] = useState(false);
     const objRef = useRef({});
     const MAIN_INFO = [{
-        // "img": main1,
-        // "insideImg": ,
+        "img": zahal,
+        "insideImg": [zahal],
         "name": "אל״מ מיקי אלמקאייס | מפקד בה״ד 10, חיל הרפואה",
         "topic": `הובלת מאמץ הלמידה במלחמה, הטמעת לקחים חיליים מלחימה להכשרות בבה"ד`,
         "description": "",
@@ -34,7 +35,7 @@ const ParticipantsPage = () => {
     },
     {
         "img": Einat,
-        "insideImg": Einat,
+        "insideImg": [Einat],
         "name": 'רס"ן עינת יונתן אש, רמ"ד הערכה ובקרה בתוה"ד חיל אוויר',
         "topic": "מהערכה להחלטה",
         "description": ` רס"ן עינת יונתן אש רמ"ד הערכה ובקרה בחיל האויר. עוסקת בפיתוח וניהול הדרכה מזה כ 15 שנה, בהתאחדות התעשיינים ובציר הליבה של חיל האוויר, בית הספר לטיסה, טייסות ה- F35, בי"ס למטה המבצעי וטייסות המסוקים והכטמ"מ`,

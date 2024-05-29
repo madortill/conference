@@ -16,13 +16,13 @@ import Isca from '../../media/images/people/isca.jpeg';
 import Duo1 from '../../media/images/people/duo1.jpeg';
 import Duo2 from '../../media/images/people/duo2.jpeg';
 import Einat from '../../media/images/people/einat.jpeg';
-
+import zahal from '../../media/images/zahal.png';
 
 const ParticipantsPreview = () => {
     const navigate = useNavigate();
     const PEOPLE = [
         {
-            // "src": gila,
+            "src": zahal,
             "name": "אל״מ מיקי אלמקאייס | מפקד בה״ד 10, חיל הרפואה",
             "topic": "הובלת מאמץ הלמידה במלחמה, הטמעת לקחים חיליים מלחימה להכשרות בבה״ד",
             "font-size": "1rem",

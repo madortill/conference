@@ -2,11 +2,6 @@ import './ParticipantCard.styles.css'
 import close from "../../media/images/close.png";
 
 const ParticipantCard = (props) => {
-//     const allPics = props.infoObj.insideImg.map((picture) =>
-//         <img key={picture} src={picture} className='main-img participant-card-img not-press'></img>
-// )
-
-// console.log(allPics)
     return (
         <div className='participant-card-container' onClick={(e) => e.target.classList.contains("not-press") ? null : props.closeReadMore()}>
             <div className='participant-card not-press'>
