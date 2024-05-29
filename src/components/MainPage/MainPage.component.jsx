@@ -9,7 +9,6 @@ import ParticipantsPreview from '../ParticipantsPreview/ParticipantsPreview.comp
 import FrontAnimation from '../FrontAnimation/FrontAnimation.component';
 import Luz from '../../components/Luz/Luz.component'
 import ContactInfo from '../ContactInfo/ContactInfo.component';
-import kirya from '../../media/images/kirya.png';
 
 const MainPage = (props) => {
     const navigate = useNavigate();
@@ -24,9 +23,9 @@ const MainPage = (props) => {
     const isInView2 = useInView(motionRef2);
 
     const DATA = [
-        `כנס הערכת הדרכה הצה"לי, מיועד לאוכלוסיית השרוך הבורדו, הלא היא אוכלוסיית פיתוח ההדרכה ולאוכ' מנהלי ההדרכה הבכירים בבה"דים ובחילות צה"ל.`,
-        `הכנס מהווה הזדמנות ייחודית עבור מפתחים ומפקדים בעולמות ההדרכה להתכנס, לדון וללמוד על סוגיות מרכזיות בנושא הערכת הדרכה בכלל והערכת הדרכה בשנת מלחמה בפרט.`,
-        `במהלך הכנס נשמע הרצאות מרתקות ממפתחי הדרכה ומפקדים בכירים על הערכת הדרכה, נקבל כלים יישומיים ונחזק את הקהילה המקצועית שלנו.`,
+        `כנס הערכת הדרכה הצה"לי, מיועד לאוכלוסיית השרוך הבורדו, אוכלוסיית פיתוח ההדרכה ולאוכ' מנהלי ההדרכה הבכירים בבה"דים ובחילות צה"ל.`,
+        `הכנס מהווה הזדמנות ייחודית עבור מפתחים ומפתחות ומפקדים ומפקדות בעולמות ההדרכה להתכנס, לדון וללמוד על סוגיות מרכזיות בנושא הערכת הדרכה בכלל והערכת הדרכה בשנת מלחמה בפרט.`,
+        `במהלך הכנס נשמע הרצאות מרתקות ממפתחי ומפתחות הדרכה ומפקדים ומפקדות בכירים ובכירות על הערכת הדרכה, נקבל כלים יישומיים ונחזק את הקהילה המקצועית שלנו.`,
         `צוות ההיגוי של הכנס מורכב מקריית ההדרכה, חיל אוויר, חיל הים, פיקוד ההכשרות והאימונים, אמ"ן, פיקוד העורף ועוד רבים וטובים.`
     ]
 
@@ -57,16 +56,13 @@ const MainPage = (props) => {
                             <h1 className='header'>על הכנס</h1>
                             <p className="main-page-text">{DATA[0]}</p>
                             <p className="main-page-text">{DATA[1]}</p>
-                            <p className="main-page-text">{DATA[2]}</p>
                         </motion.div>
                     </div>
 
                     <div className='text-pic-section text-pic-section2'>
-                        <div className='round-logo' style={{ backgroundImage: `url(${kirya})` }}></div>
-
                         <div className='text-section text-section2'>
                             <motion.div ref={motionRef2} style={{ transform: isInView2 ? "none" : "translateX(-300px)", opacity: isInView2 ? 1 : 0, transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1)" }}>
-                                <h1 className='header'>ענף ההדרכה של קריית ההדרכה</h1>
+                                <p className="main-page-text">{DATA[2]}</p>
                                 <p className="main-page-text">{DATA[3]}</p>
                             </motion.div>
                         </div>

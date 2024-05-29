@@ -1,6 +1,8 @@
 import './ContactInfo.styles.css'
 import war from '../../media/images/war-logo.png';
-import zahal from '../../media/images/zahal.png'
+import zahal from '../../media/images/zahal.png';
+import kirya from '../../media/images/kirya.png';
+ 
 
 const ContactInfo = () => {
 
@@ -16,6 +18,7 @@ const ContactInfo = () => {
         <div className='flex-container-2'>
           <img src={war} className='pics'/>
           <img src={zahal} className='pics' />
+          <img src={kirya} className='pics' />
         </div>
       </div>
     </div>
