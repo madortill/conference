@@ -13,7 +13,7 @@ const Registration = () => {
     const SEAT1 = [
         `רס"ן (במיל') פנינה נוימן | מי מפחד (למדוד) מיומנויות רכות`,
         `רס"ל (במיל') אלמוג כהן ואע"צ אלונה צנטי | הערכה 360°- ככה עושים את זה נכון`,
-        `עו"ד משה שוקרי, ר' תחום הערכת הדרכה באגף ההדרכה, משטרת ישראל + אלינה באנק, מנהלת פיתוח הדרכה, זכיין ההדרכה במכללה הלאומית לשוטרים`,
+        `עו"ד משה שוקרי, ר' תחום הערכת הדרכה באגף ההדרכה, משטרת ישראל ואלינה באנק, מנהלת פיתוח הדרכה, זכיין ההדרכה במכללה הלאומית לשוטרים`,
         `טל בוזנאה ושרית צברי | קמפוס דיגיטלי כפלטפורמה להערכה`,
     ]
     
@@ -25,10 +25,10 @@ const Registration = () => {
     ]
 
     const onFinish = useCallback(
-        async ({ email, name, level, phone, seat1, seat2, unit, role, bahad, car, model, food, other}) => {
+        async ({ email, name, level, phone, seat1, seat2, unit, role, bahad, car, number, color, model, food}) => {
             try {
                 const response = await fetch(
-                    'https://docs.google.com/forms/d/e/1FAIpQLSdMtLvbtHrp7MyuVdkbna_wTaUYvZBgXH4FAJrPYxHXkFgMKQ/viewform?' +
+                    'https://docs.google.com/forms/d/e/1FAIpQLSdMtLvbtHrp7MyuVdkbna_wTaUYvZBgXH4FAJrPYxHXkFgMKQ/viewform?usp=pp_url' +
                     new URLSearchParams({
                         'entry.343054181': name ?? '',
                         'entry.1818583619': level ?? '',
@@ -39,9 +39,10 @@ const Registration = () => {
                         'entry.1700613233': role ?? '',
                         'entry.94308182': bahad,
                         'entry.2065539728': car,
-                        'entry.990947724': model ?? '',
+                        'entry.990947724': number ?? '',
+                        'entry.430422737': color ?? '',
+                        'entry.1975254107': model ?? '',
                         'entry.1088207776': food,
-                        'entry.1930764866': other,
                         emailAddress: email,
                     }),
                     {
@@ -129,7 +130,7 @@ const Registration = () => {
                         <Form.Item
                             className='form-item'
                             name="seat1"
-                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>מושב ראשון</label>}
+                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}> מבין האפשרויות הבאות, עלייך לבחור באפשרות המועדפת עלייך: מושב ראשון</label>}
                             rules={[{ required: true, message: 'אנא בחרו מושב ראשון.' }]}
                         >
                             <Radio.Group>
@@ -145,7 +146,7 @@ const Registration = () => {
                         <Form.Item
                             className='form-item'
                             name="seat2"
-                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>מושב שני</label>}
+                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}> מבין האפשרויות הבאות, עלייך לבחור באפשרות המועדפת עלייך:  מושב שני</label>}
                             rules={[{ required: true, message: 'אנא בחרו מושב שני.' }]}
                         >
                             <Radio.Group>
@@ -175,7 +176,7 @@ const Registration = () => {
                         <Form.Item
                             className='form-item form-select'
                             name="bahad"
-                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>אם הינכם משרתים בקריית ההדרכה: בחרו בבה״ד שלכם.</label>}
+                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>אם הינך מקריית ההדרכה: נא לבחור בבה״ד שלכם.</label>}
                             rules={[{ required: false, message: 'אנא בחרו בבה״ד שלכם. אם אינכם משרתים בקרית ההדרכה - בחרו באפשרות ״בחר״' }]}>
                             <Select
                                 initialvalues={{
@@ -184,10 +185,10 @@ const Registration = () => {
                                 }}
 
                                 options={[
-                                //     {
-                                //     value: 'בחר',
-                                //     label: 'בחר',
-                                // },
+                                {
+                                    value: 'בחר',
+                                    label: 'בחר',
+                                },
                                 {
                                     value: 'בה״ד 6',
                                     label: 'בה״ד 6',
@@ -227,22 +228,37 @@ const Registration = () => {
                         <Form.Item
                             className='form-item'
                             name="car"
-                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>מגיעים ברכב? (מיועד לאישור כניסה, רק מדרגת סר״ן ומעלה)</label>}
+                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>דרגת סרן ומעלה: מעוניינים באישור כניסה לרכב</label>}
                             rules={[{ required: false, message: 'האם תרצו להגיע ברכב?' }]}
                         >
                             <Radio.Group>
                                 <Space className='radio-container' direction="vertical">
                                     <Radio className='radio-btn' value="כן">כן</Radio>
                                     <Radio className='radio-btn' value="לא">לא</Radio>
-                                    <Radio className='radio-btn' value="לא יודע עדיין">לא יודע עדיין</Radio>
                                 </Space>
                             </Radio.Group>
                         </Form.Item>
                         <Form.Item
                             className='form-item'
-                            name="model"
-                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>אם עניתם כן, מה מספר הרכב, צבעו והדגם שלו</label>}
+                            name="number"
+                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>אם כן, יש למלא את הפרטים הבאים: מספר הרכב</label>}
                             rules={[{ required: false, message: 'אנא הכניסו את מספר הרכב שלכם על מנת להנפיק אישור כניסה.' }]}
+                        >
+                            <Input className='form-input' />
+                        </Form.Item>
+                        <Form.Item
+                            className='form-item'
+                            name="color"
+                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>צבע הרכב</label>}
+                            rules={[{ required: false, message: 'אנא הכניסו את צבע הרכב שלכם על מנת להנפיק אישור כניסה.' }]}
+                        >
+                            <Input className='form-input' />
+                        </Form.Item>
+                        <Form.Item
+                            className='form-item'
+                            name="model"
+                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>דגם הרכב</label>}
+                            rules={[{ required: false, message: 'אנא הכניסו את דגם הרכב שלכם על מנת להנפיק אישור כניסה.' }]}
                         >
                             <Input className='form-input' />
                         </Form.Item>
@@ -258,19 +274,10 @@ const Registration = () => {
                                     <Radio className='radio-btn' value="צמחוני">צמחוני</Radio>
                                     <Radio className='radio-btn' value="טבעוני">טבעוני</Radio>
                                     <Radio className='radio-btn' value="צליאקי">צליאקי</Radio>
-                                    <Radio className='radio-btn' value="אחר..">אחר..</Radio>
+                                    <Radio className='radio-btn' value="אחר">אחר</Radio>
                                 </Space>
                             </Radio.Group>
                         </Form.Item>
-                        <Form.Item
-                            className='form-item'
-                            name="other"
-                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>אם עניתם אחר, מה הבקשה?</label>}
-                            rules={[{ required: false, message: 'האם יש לכם בקשה מיוחדת למזון?' }]}
-                        >
-                            <Input className='form-input' />
-                        </Form.Item>
-
                         <Button type="primary" htmlType="submit" className='pointer' id='submitBtn'>
                             שליחה
                         </Button>
