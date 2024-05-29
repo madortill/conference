@@ -68,7 +68,7 @@ const ParticipantsPreview = () => {
             "src": Duo1,
             "name": `רס"ל (במיל') אלמוג כהן ואע"צ אלונה צנטי`,
             "topic": "הערכה 360°- ככה עושים את זה נכון",
-            "font-size": "1rem",
+            "font-size": "0.75rem",
         },
         {
             "src": Isca,
