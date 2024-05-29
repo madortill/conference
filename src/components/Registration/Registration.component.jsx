@@ -81,8 +81,13 @@ const Registration = () => {
 
     return (
         <>
+        {isSubmited ? <Confirmation></Confirmation> : null}
         {contextHolder}
         <div className='form-container'>
+
+                <h1 className='participants-title' id="registrationTitle">הרשמה לכנס</h1>
+                <p className='registration-text'>יש לוודא קבלת מייל אישור הרשמה עם פרטי ההרצאות המבוקשות. במידה ולא התקבלה הודעה יש לבדוק בתיבת הספאם או לפנות אלינו במייל:</p>
+                <a className='registration-text' href="mailto:evaluation.confe@gmail.com">evaluation.confe@gmail.com</a>
             <Form
                 form={form}
                 onFinish={onFinish}
