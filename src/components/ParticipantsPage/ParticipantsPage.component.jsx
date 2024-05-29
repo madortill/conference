@@ -18,7 +18,9 @@ import Duo2 from '../../media/images/people/duo2.jpeg';
 import Moshe from '../../media/images/people/moshe.jpeg';
 import Alina from '../../media/images/people/alina.jpeg';
 import Einat from '../../media/images/people/einat.jpeg';
-import zahal from '../../media/images/zahal.png'
+import zahal from '../../media/images/zahal.png';
+import campus from '../../media/images/people/campus.jpeg';
+
 import ParticipantCard from '../ParticipantCard/ParticipantCard.component';
 
 
@@ -102,15 +104,15 @@ const ParticipantsPage = () => {
     {
         "img": Isca,
         "insideImg": [Isca],
-        "name": `יסכה רוטשילד מפקדת טייסת חופ"ה והדס גולבר קצינת חופ"ה בית ספר לטיסה`,
+        "name": `רס״ן יסכה רוטשילד מפקדת טייסת חופ"ה וסרן הדס גולבר קצינת חופ"ה בית ספר לטיסה`,
         "topic": "הערכת הדרך- תהליך בניית טופס הערכת גיחה בקורס טיס",
         "description": "",
         "full-text": `בית הספר לטיסה אמון על הכשרת לוחמי צוות האוויר לתפקידים השונים. בביה"ס מתקיימים תהליכי הדרכה, הערכה ומיון מקצועיים ומעמיקים. תהליכים אלה מתבססים בעיקר על הערכות המדריכים על ביצועי החניכים עבור כל גיחה וגיחה. בראשות הצירים של התהליך, נמצא טופס הערכת הגיחה שמחולק לקריטריונים קבועים על פיהם מעריכים וממיינים. 
         במושב זה נתמקד בכניסה והשפעה בעולמות מגוונים, איך מדייקים כלי הערכה שיביאו ערך לכלל המשתמשים וכמו כן, הצגת תהליך הערכה אחר, שמתמקד בדרך ולא רק בתוצר הסופי. `
     },
     {
-        "img": TalB,
-        "insideImg": [TalB],
+        "img": campus,
+        "insideImg": [campus],
         "name": "טל בוזנאה ושרית צברי",
         "topic": "קמפוס דיגיטלי כפלטפורמה להערכה",
         "description": `אנחנו צוות ההטמעה המטכ"לי של מערכת הקמפוס הדיגיטלי, שמדריך, תומך ומלווה את  היחידות ובסיסי ההדרכה השונים במערכת.`,

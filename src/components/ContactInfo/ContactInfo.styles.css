@@ -89,11 +89,12 @@
 
     .flex-container-2 {
         position: relative;
-        bottom: 1vh;
-        left: 45vw;
+        bottom: 1.75vh;
+        left: 44vw;
     }
 
     .pics {
         width: 6rem;
+        margin: 0.5vh;
     }
 }

@@ -17,25 +17,26 @@ import Duo1 from '../../media/images/people/duo1.jpeg';
 import Duo2 from '../../media/images/people/duo2.jpeg';
 import Einat from '../../media/images/people/einat.jpeg';
 import zahal from '../../media/images/zahal.png';
+import campus from '../../media/images/people/campus.jpeg';
 
 const ParticipantsPreview = () => {
     const navigate = useNavigate();
     const PEOPLE = [
         {
             "src": zahal,
-            "name": "אל״מ מיקי אלמקאייס | מפקד בה״ד 10, חיל הרפואה",
+            "name": "אל״מ מיקי אלמקאייס",
             "topic": "הובלת מאמץ הלמידה במלחמה, הטמעת לקחים חיליים מלחימה להכשרות בבה״ד",
             "font-size": "1rem",
         },
         {
             "src": Einat,
-            "name": 'רס"ן עינת יונתן אש, רמ"ד הערכה ובקרה בתוה"ד חיל אוויר',
+            "name": 'רס"ן עינת יונתן אש',
             "topic": "מהערכה להחלטה",
             "font-size": "1rem",
         },
         {
             "src": YuvalL,
-            "name": 'סא״ל יובל לייקין | רע״ן הדרכה אמ״ן',
+            "name": 'סא״ל יובל לייקין',
             "topic": "הדרכה תחת אש",
             "font-size": "1rem",
         },
@@ -71,12 +72,12 @@ const ParticipantsPreview = () => {
         },
         {
             "src": Isca,
-            "name": `יסכה רוטשילד מפקדת טייסת חופ"ה והדס גולבר קצינת חופ"ה בית ספר לטיסה`,
+            "name": `רס״ן יסכה רוטשילד וסרן הדס גולבר`,
             "topic": "הערכת הדרך- תהליך בניית טופס הערכת גיחה בקורס טיס",
             "font-size": "1rem",
         },
         {
-            "src": TalB,
+            "src": campus,
             "name": "טל בוזנאה ושרית צברי",
             "topic": "קמפוס דיגיטלי כפלטפורמה להערכה",
             "font-size": "1rem",
@@ -89,13 +90,13 @@ const ParticipantsPreview = () => {
         },
         {
             "src": Raheli,
-            "name": "רחל פינטו",
+            "name": "רחלי גנשאפט פינטו",
             "topic": "ארגון מע/אריך",
             "font-size": "1rem",
         },
         {
             "src": Duo2,
-            "name": `עו"ד משה שוקרי, ר' תחום הערכת הדרכה באגף ההדרכה, משטרת ישראל + אלינה באנק, מנהלת פיתוח הדרכה, זכיין ההדרכה במכללה הלאומית לשוטרים`,
+            "name": `עו"ד משה שוקרי ואלינה באנק`,
             "topic": "הערכת הדרכה – הדור הבא",
             "font-size": "1rem",
         }

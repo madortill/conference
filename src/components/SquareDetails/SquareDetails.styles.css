@@ -47,6 +47,12 @@
     justify-content: space-evenly;
 }
 
+.link {
+    width: 6vw;
+    padding-bottom: 2.5vh;
+    cursor: pointer;
+}
+
 @media only screen and (min-width: 768px) {
     .detail-squars {
         height: 50rem;
