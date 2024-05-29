@@ -64,11 +64,13 @@ const Registration = () => {
                     //         message: 'error',
                     //     });
                     // }
+                    console.log(response.redirected)
                 } catch (e) {
                     // api.open({
                     //     message: 'Error Occured',
                     //     duration: 0,
                     //   });
+                    console.log(e)
                     api.error({
                         message: e.message,
                     });
@@ -184,10 +186,10 @@ const Registration = () => {
                                 }}
 
                                 options={[
-                                {
-                                    value: 'בחר',
-                                    label: 'בחר',
-                                },
+                                // {
+                                //     value: 'בחר',
+                                //     label: 'בחר',
+                                // },
                                 {
                                     value: 'בה״ד 6',
                                     label: 'בה״ד 6',
