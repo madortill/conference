@@ -28,7 +28,7 @@ const Registration = () => {
         async ({ email, name, level, phone, seat1, seat2, unit, role, bahad, car, number, color, model, food}) => {
             try {
                 const response = await fetch(
-                    'https://docs.google.com/forms/d/e/1FAIpQLSdMtLvbtHrp7MyuVdkbna_wTaUYvZBgXH4FAJrPYxHXkFgMKQ/viewform?usp=pp_url' +
+                    'https://docs.google.com/forms/d/e/1FAIpQLSdMtLvbtHrp7MyuVdkbna_wTaUYvZBgXH4FAJrPYxHXkFgMKQ/formResponse?' +
                     new URLSearchParams({
                         'entry.343054181': name ?? '',
                         'entry.1818583619': level ?? '',
@@ -50,8 +50,6 @@ const Registration = () => {
                     }
                 );
                 // Check for status code 200 (success)
-                // console.log(response);
-                // if (response.status >= 200 && response.status < 400) {
                 api.success({
                     message: 'Submitted successfully',
                 },
@@ -59,11 +57,7 @@ const Registration = () => {
                     setIsSubmited(true)
                 );
                 form.resetFields();
-                // } else {
-                //     api.error({
-                //         message: 'error',
-                //     });
-                // }
+                console.log(setIsConfirmed)
             } catch (e) {
                 // api.open({
                 //     message: 'Error Occured',
@@ -177,7 +171,7 @@ const Registration = () => {
                             className='form-item form-select'
                             name="bahad"
                             label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>אם הינך מקריית ההדרכה: נא לבחור בבה״ד שלכם.</label>}
-                            rules={[{ required: false, message: 'אנא בחרו בבה״ד שלכם. אם אינכם משרתים בקרית ההדרכה - בחרו באפשרות ״בחר״' }]}>
+                            rules={[{ required: false }]}>
                             <Select
                                 initialvalues={{
                                     value: 'בחר',
@@ -229,7 +223,7 @@ const Registration = () => {
                             className='form-item'
                             name="car"
                             label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>דרגת סרן ומעלה: מעוניינים באישור כניסה לרכב</label>}
-                            rules={[{ required: false, message: 'האם תרצו להגיע ברכב?' }]}
+                            rules={[{ required: false }]}
                         >
                             <Radio.Group>
                                 <Space className='radio-container' direction="vertical">
@@ -242,7 +236,7 @@ const Registration = () => {
                             className='form-item'
                             name="number"
                             label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>אם כן, יש למלא את הפרטים הבאים: מספר הרכב</label>}
-                            rules={[{ required: false, message: 'אנא הכניסו את מספר הרכב שלכם על מנת להנפיק אישור כניסה.' }]}
+                            rules={[{ required: false }]}
                         >
                             <Input className='form-input' />
                         </Form.Item>
@@ -250,7 +244,7 @@ const Registration = () => {
                             className='form-item'
                             name="color"
                             label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>צבע הרכב</label>}
-                            rules={[{ required: false, message: 'אנא הכניסו את צבע הרכב שלכם על מנת להנפיק אישור כניסה.' }]}
+                            rules={[{ required: false }]}
                         >
                             <Input className='form-input' />
                         </Form.Item>
@@ -258,7 +252,7 @@ const Registration = () => {
                             className='form-item'
                             name="model"
                             label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>דגם הרכב</label>}
-                            rules={[{ required: false, message: 'אנא הכניסו את דגם הרכב שלכם על מנת להנפיק אישור כניסה.' }]}
+                            rules={[{ required: false }]}
                         >
                             <Input className='form-input' />
                         </Form.Item>
@@ -270,7 +264,7 @@ const Registration = () => {
                         >
                             <Radio.Group>
                                 <Space className='radio-container' direction="vertical">
-                                    <Radio className='radio-btn' value="אין הערות">אין הערות</Radio>
+                                    <Radio className='radio-btn' value="אין">אין</Radio>
                                     <Radio className='radio-btn' value="צמחוני">צמחוני</Radio>
                                     <Radio className='radio-btn' value="טבעוני">טבעוני</Radio>
                                     <Radio className='radio-btn' value="צליאקי">צליאקי</Radio>
