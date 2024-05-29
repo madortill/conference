@@ -17,7 +17,7 @@ import Duo1 from '../../media/images/people/duo1.jpeg';
 import Duo2 from '../../media/images/people/duo2.jpeg';
 import Moshe from '../../media/images/people/moshe.jpeg';
 import Alina from '../../media/images/people/alina.jpeg';
-
+import Einat from '../../media/images/people/einat.jpeg';
 import ParticipantCard from '../ParticipantCard/ParticipantCard.component';
 
 
@@ -33,11 +33,11 @@ const ParticipantsPage = () => {
         "full-text": `מתחילת המלחמה ועד היום חיל הרפואה בשיתוף יחידות הקצה ובהובלת מפקד בה"ד 10 מובילים מאמץ למידה מקיף שכולל בתוכו תהליכי הערכה ובהם תחקור כל אירוע רפואי ויישום הלקחים ברמת המאקרו והמיקרו מהבה"ד אל השטח ומהשטח אל הבה"ד. `
     },
     {
-        // "img": main2,
-        // "insideImg": ,
+        "img": Einat,
+        "insideImg": Einat,
         "name": 'רס"ן עינת יונתן אש, רמ"ד הערכה ובקרה בתוה"ד חיל אוויר',
         "topic": "מהערכה להחלטה",
-        "description": ".",
+        "description": ` רס"ן עינת יונתן אש רמ"ד הערכה ובקרה בחיל האויר. עוסקת בפיתוח וניהול הדרכה מזה כ 15 שנה, בהתאחדות התעשיינים ובציר הליבה של חיל האוויר, בית הספר לטיסה, טייסות ה- F35, בי"ס למטה המבצעי וטייסות המסוקים והכטמ"מ`,
         "full-text": `ההרצאה עוסקת בהערכת הדרכה ברמה 3 -ו4 והשאלה המרכזית היא- כיצד היא תומכת אותנו בקבלת החלטות? יוצג פיילוט שמתקיים בתוה"ד חיל האוויר אשר מרכז את כל האינפורמציה המאוגדת באמצעות ביקורות ההדרכה וסיקורי התל"ב באמצעות מערכת BI ומסייע לנו לקבל מגוון תמונות מצב, להפיק תובנות ותומך את קבלת ההחלטות. `
     },
     {

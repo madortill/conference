@@ -15,6 +15,7 @@ import TalB from '../../media/images/people/talB.jpeg';
 import Isca from '../../media/images/people/isca.jpeg';
 import Duo1 from '../../media/images/people/duo1.jpeg';
 import Duo2 from '../../media/images/people/duo2.jpeg';
+import Einat from '../../media/images/people/einat.jpeg';
 
 
 const ParticipantsPreview = () => {
@@ -27,7 +28,7 @@ const ParticipantsPreview = () => {
             "font-size": "1rem",
         },
         {
-            // "src": adi,
+            "src": Einat,
             "name": 'רס"ן עינת יונתן אש, רמ"ד הערכה ובקרה בתוה"ד חיל אוויר',
             "topic": "מהערכה להחלטה",
             "font-size": "1rem",
