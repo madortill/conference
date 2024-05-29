@@ -109,7 +109,7 @@ const Registration = () => {
                             className='form-item'
                             name="level"
                             label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>דרגה (לאנשי צבא בלבד)</label>}
-                            rules={[{ required: false }]}
+                            rules={[{ required: false, message: "" }]}
                         >
                             <Input className='form-input' />
                         </Form.Item>
@@ -171,7 +171,7 @@ const Registration = () => {
                             className='form-item form-select'
                             name="bahad"
                             label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>אם הינך מקריית ההדרכה: נא לבחור בבה״ד שלכם.</label>}
-                            rules={[{ required: false }]}>
+                            rules={[{ required: false, message: "" }]}>
                             <Select
                                 initialvalues={{
                                     value: 'בחר',
@@ -223,7 +223,7 @@ const Registration = () => {
                             className='form-item'
                             name="car"
                             label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>דרגת סרן ומעלה: מעוניינים באישור כניסה לרכב</label>}
-                            rules={[{ required: false }]}
+                            rules={[{ required: false, message: "" }]}
                         >
                             <Radio.Group>
                                 <Space className='radio-container' direction="vertical">
@@ -236,7 +236,7 @@ const Registration = () => {
                             className='form-item'
                             name="number"
                             label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>אם כן, יש למלא את הפרטים הבאים: מספר הרכב</label>}
-                            rules={[{ required: false }]}
+                            rules={[{ required: false, message: "" }]}
                         >
                             <Input className='form-input' />
                         </Form.Item>
@@ -244,7 +244,7 @@ const Registration = () => {
                             className='form-item'
                             name="color"
                             label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>צבע הרכב</label>}
-                            rules={[{ required: false }]}
+                            rules={[{ required: false, message: "" }]}
                         >
                             <Input className='form-input' />
                         </Form.Item>
@@ -252,7 +252,7 @@ const Registration = () => {
                             className='form-item'
                             name="model"
                             label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>דגם הרכב</label>}
-                            rules={[{ required: false }]}
+                            rules={[{ required: false, message: "" }]}
                         >
                             <Input className='form-input' />
                         </Form.Item>
