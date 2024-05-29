@@ -49,29 +49,34 @@ const Registration = () => {
                         mode: 'no-cors',
                     }
                 );
-                // Check for status code 200 (success)
-                api.success({
-                    message: 'Submitted successfully',
-                },
-                    setIsConfirmed(true),
-                    setIsSubmited(true)
-                );
-                form.resetFields();
-                console.log(setIsConfirmed)
-            } catch (e) {
-                // api.open({
-                //     message: 'Error Occured',
-                //     duration: 0,
-                //   });
-                console.log(e)
-                api.error({
-                    message: e.message,
-                });
-                setIsConfirmed(false);
-                setIsSubmited(false);
-            }
-        },
-        [api, form]
+// Check for status code 200 (success)
+                // console.log(response);
+                // if (response.status >= 200 && response.status < 400) {
+                    api.success({
+                        message: 'Submitted successfully',
+                    },
+                        setIsConfirmed(true),
+                        setIsSubmited(true)
+                    );
+                    form.resetFields();
+                    // } else {
+                    //     api.error({
+                    //         message: 'error',
+                    //     });
+                    // }
+                } catch (e) {
+                    // api.open({
+                    //     message: 'Error Occured',
+                    //     duration: 0,
+                    //   });
+                    api.error({
+                        message: e.message,
+                    });
+                    setIsConfirmed(false);
+                    setIsSubmited(false);
+                }
+            },
+            [api, form]
     );
 
     return (
