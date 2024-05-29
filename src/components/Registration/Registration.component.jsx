@@ -93,6 +93,7 @@ const Registration = () => {
                 onFinish={onFinish}
                 layout="vertical"
             >
+                 <div className='inputs-container'>
                 <Form.Item
                     className='form-item'
                     name="email"
@@ -139,6 +140,8 @@ const Registration = () => {
                         </Space>
                     </Radio.Group>
                 </Form.Item>
+            </div>
+             <div className='inputs-container'>
                 <Form.Item
                     className='form-item'
                     name="seat2"
@@ -270,7 +273,8 @@ const Registration = () => {
                                 </Space>
                             </Radio.Group>
                         </Form.Item>
-                <Button type="primary" htmlType="submit" className='pointer' id='submitBtn'>
+             </div>
+                 <Button type="primary" htmlType="submit" className='pointer' id='submitBtn'>
                     שליחה
                 </Button>
             </Form>
