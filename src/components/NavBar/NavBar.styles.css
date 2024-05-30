@@ -26,7 +26,7 @@
 
 .title-conference {
     color: white;
-    font-size: 2rem;
+    font-size: 1.25rem;
     margin-left: 3rem;
 }
 
@@ -130,6 +130,12 @@
         width: 100vw;
         height: 6vh;
         position: fixed;
+    }
+
+    .title-conference {
+        color: white;
+        font-size: 1.6rem;
+        margin-left: 3rem;
     }
     
     .icon-container {
