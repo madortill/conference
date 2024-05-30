@@ -1,8 +1,8 @@
 .participant-card {
     width: 100%;
-    min-height: 100%;
+    /* min-height: 60%; */
+    height: 100%;
     overflow-y: scroll;
-    /* height: fit-content; */
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -33,7 +33,7 @@
 .participant-card-img {
     border: solid 5px #0094d4ba;
     width: 12.5rem;
-    height: 12rem;
+    height: 12.5rem;
     margin: 1rem;
 }
 
