@@ -28,21 +28,22 @@ const Registration = () => {
         async ({email, name, level, phone, seat1, seat2, unit, role, bahad, car, carNumber, color, model, food}) => {
             try {
                 const response = await fetch (
-                    "https://docs.google.com/forms/d/e/1FAIpQLSeP_JCei3YiwtjsZUfP8czx47v61DLXqWsofz4dZAh6x8RUXQ/formResponse?" +
+                    // "https://docs.google.com/forms/d/e/1FAIpQLSeP_JCei3YiwtjsZUfP8czx47v61DLXqWsofz4dZAh6x8RUXQ/formResponse?" +
+                    'https://docs.google.com/forms/d/e/1FAIpQLScjYm6gcS-WCMMAO2Pxo7oxa2advDvmHXtBK2e8b1h8mOl-gA/formResponse?' +
                     new URLSearchParams ({
-                        'entry.861887433': name ?? '',
-                        'entry.1522919113': level ?? '',
-                        'entry.2126579341': phone ?? '',
-                        'entry.896602696': seat1,
-                        'entry.1817269316': seat2,
-                        'entry.995594023': unit ?? '',
-                        'entry.1774602902': role ?? '',
-                        'entry.1658389145': bahad,
-                        'entry.1196107794': car,
-                        'entry.121284304': carNumber ?? '',
-                        'entry.237027329': color ?? '',
-                        'entry.932918356': model ?? '',
-                        'entry.1365822488': food,
+                        'entry.934400202': name ?? '',
+                        'entry.1115520134': level ?? '',
+                        'entry.860340030': phone ?? '',
+                        'entry.590287215': seat1,
+                        'entry.1127533607': seat2,
+                        'entry.1560729842': unit ?? '',
+                        'entry.1914024005': role ?? '',
+                        'entry.349923372': bahad,
+                        'entry.604594531': car,
+                        'entry.182644226': carNumber ?? '',
+                        'entry.877109021': color ?? '',
+                        'entry.460501388': model ?? '',
+                        'entry.1891370651': food,
                         emailAddress: email,
                     }),
                     {
