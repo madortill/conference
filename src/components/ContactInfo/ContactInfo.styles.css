@@ -41,9 +41,10 @@
 }
 
 .flex-container-2 {
-    position: relative;
-    bottom: 0.75vh;
-    left: 34vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.25vh;
 }
 
 .pics {
