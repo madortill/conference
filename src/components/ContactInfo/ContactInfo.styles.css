@@ -11,7 +11,7 @@
 }
 
 .flex-container {
-    padding-top: 6vh;
+    padding-top: 4vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -44,7 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 0.25vh;
+    padding-top: 1vh;
 }
 
 .pics {
