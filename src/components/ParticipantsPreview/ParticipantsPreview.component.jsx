@@ -26,7 +26,7 @@ const ParticipantsPreview = () => {
     const PEOPLE = [
         {
             "src": bahad,
-            "name": "אל״מ מיקי אלמקאייס",
+            "name": "אל״מ מיקי אלמקיאס",
             "topic": "הובלת מאמץ הלמידה במלחמה, הטמעת לקחים חיליים מלחימה להכשרות בבה״ד",
             "font-size": "1rem",
         },

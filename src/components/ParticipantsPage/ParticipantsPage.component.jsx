@@ -23,14 +23,13 @@ import campus from '../../media/images/people/campus.jpeg';
 import bahad from '../../media/images/people/bahad10.jpeg'
 import ParticipantCard from '../ParticipantCard/ParticipantCard.component';
 
-
 const ParticipantsPage = () => {
     const [isCard, setIsCard] = useState(false);
     const objRef = useRef({});
     const MAIN_INFO = [{
         "img": bahad,
         "insideImg": [bahad],
-        "name": "אל״מ מיקי אלמקאייס | מפקד בה״ד 10, חיל הרפואה",
+        "name": "אל״מ מיקי אלמקיאס | מפקד בה״ד 10, חיל הרפואה",
         "topic": `הובלת מאמץ הלמידה במלחמה, הטמעת לקחים חיליים מלחימה להכשרות בבה"ד`,
         "description": "",
         "full-text": `מתחילת המלחמה ועד היום חיל הרפואה בשיתוף יחידות הקצה ובהובלת מפקד בה"ד 10 מובילים מאמץ למידה מקיף שכולל בתוכו תהליכי הערכה ובהם תחקור כל אירוע רפואי ויישום הלקחים ברמת המאקרו והמיקרו מהבה"ד אל השטח ומהשטח אל הבה"ד. `
