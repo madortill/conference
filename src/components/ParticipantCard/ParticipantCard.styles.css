@@ -1,6 +1,6 @@
 .participant-card {
     width: 100%;
-    min-height: 100%;
+    min-height: 90%;
     overflow-y: scroll;
     /* height: fit-content; */
     background-color: white;

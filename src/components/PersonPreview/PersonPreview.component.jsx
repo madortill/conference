@@ -10,7 +10,6 @@ const PersonPreview = (props) => {
                     <p className='description-name' style={{fontSize: props.font}}>{props.name}</p>
                 </div>
             </div>
-
         </div>
     )
 }
