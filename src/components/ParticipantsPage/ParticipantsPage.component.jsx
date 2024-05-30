@@ -20,7 +20,7 @@ import Alina from '../../media/images/people/alina.jpeg';
 import Einat from '../../media/images/people/einat.jpeg';
 import zahal from '../../media/images/zahal.png';
 import campus from '../../media/images/people/campus.jpeg';
-
+import bahad from '../../media/images/people/bahad10.jpeg'
 import ParticipantCard from '../ParticipantCard/ParticipantCard.component';
 
 
@@ -28,8 +28,8 @@ const ParticipantsPage = () => {
     const [isCard, setIsCard] = useState(false);
     const objRef = useRef({});
     const MAIN_INFO = [{
-        "img": zahal,
-        "insideImg": [zahal],
+        "img": bahad,
+        "insideImg": [bahad],
         "name": "אל״מ מיקי אלמקאייס | מפקד בה״ד 10, חיל הרפואה",
         "topic": `הובלת מאמץ הלמידה במלחמה, הטמעת לקחים חיליים מלחימה להכשרות בבה"ד`,
         "description": "",

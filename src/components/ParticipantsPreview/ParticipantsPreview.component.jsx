@@ -18,12 +18,14 @@ import Duo2 from '../../media/images/people/duo2.jpeg';
 import Einat from '../../media/images/people/einat.jpeg';
 import zahal from '../../media/images/zahal.png';
 import campus from '../../media/images/people/campus.jpeg';
+import bahad from '../../media/images/people/bahad10.jpeg'
+
 
 const ParticipantsPreview = () => {
     const navigate = useNavigate();
     const PEOPLE = [
         {
-            "src": zahal,
+            "src": bahad,
             "name": "אל״מ מיקי אלמקאייס",
             "topic": "הובלת מאמץ הלמידה במלחמה, הטמעת לקחים חיליים מלחימה להכשרות בבה״ד",
             "font-size": "1rem",
