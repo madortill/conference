@@ -97,7 +97,7 @@ const Registration = () => {
                 <Form.Item
                     className='form-item'
                     name="email"
-                    label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>email</label>}
+                    label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>אימייל</label>}
                     rules={[{ required: true, message: 'אנא הכניסו את המייל שלכם.' }]}
                 >
                     <Input className='form-input' />
@@ -121,7 +121,7 @@ const Registration = () => {
                 <Form.Item
                     className='form-item'
                     name="phone"
-                    label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>טלפון</label>}
+                    label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>פלאפון</label>}
                     rules={[{ required: true, message: 'אנא הכניסו את טלפון שלכם.' }]}
                 >
                     <Input className='form-input' />
@@ -129,7 +129,7 @@ const Registration = () => {
                 <Form.Item
                     className='form-item'
                     name="seat1"
-                    label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}> מבין האפשרויות הבאות, עלייך לבחור באפשרות המועדפת עלייך: מושב ראשון</label>}
+                    label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}> מבין האפשרויות הבאות, עלייך לבחור באפשרות המועדפת עלייך: מושב א׳</label>}
                     rules={[{ required: true, message: 'אנא בחרו מושב ראשון.' }]}
                 >
                     <Radio.Group>
@@ -145,7 +145,7 @@ const Registration = () => {
                 <Form.Item
                     className='form-item'
                     name="seat2"
-                    label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}> מבין האפשרויות הבאות, עלייך לבחור באפשרות המועדפת עלייך:  מושב שני</label>}
+                    label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}> מבין האפשרויות הבאות, עלייך לבחור באפשרות המועדפת עלייך:  מושב ב׳</label>}
                     rules={[{ required: true, message: 'אנא בחרו מושב שני.' }]}
                 >
                     <Radio.Group>
@@ -175,7 +175,7 @@ const Registration = () => {
                         <Form.Item
                             className='form-item form-select'
                             name="bahad"
-                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>אם הינך מקריית ההדרכה: נא לבחור בבה״ד שלכם.</label>}
+                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>אם הינך מקריית ההדרכה: נא לבחור בבה״ד שלכם</label>}
                             rules={[{ required: false, message: "" }]}>
                             <Select
                                 initialvalues={{
