@@ -51,6 +51,11 @@
     width: 3rem;
 }
 
+.pics1{
+    width: 2.8rem;
+    margin-right: 3vw;
+}
+
 @media only screen and (min-width: 768px) {
     .contact-info {
         margin-top: 10rem;

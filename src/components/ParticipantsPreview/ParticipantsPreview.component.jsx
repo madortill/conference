@@ -76,7 +76,7 @@ const ParticipantsPreview = () => {
             "src": Isca,
             "name": `רס״ן יסכה רוטשילד וסרן הדס גולבר`,
             "topic": "הערכת הדרך- תהליך בניית טופס הערכת גיחה בקורס טיס",
-            "font-size": "1rem",
+            "font-size": "0.8rem",
         },
         {
             "src": campus,
