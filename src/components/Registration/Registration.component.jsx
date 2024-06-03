@@ -173,7 +173,7 @@ const Registration = () => {
                         <Form.Item
                             className='form-item form-select'
                             name="bahad"
-                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>אם הינך מקריית ההדרכה: נא לבחור בבה״ד שלכם</label>}
+                            label={<label style={{ fontSize: "1.7rem", fontFamily: 'assistant' }}>אם הינך מקריית ההדרכה: נא לבחור בבה״ד שלכם, אם אינכם מקריית ההדרכהת בחרו באופציה ״אחר״</label>}
                             rules={[{ required: true, message: "" }]}>
                             <Select
                                 initialvalues={{
