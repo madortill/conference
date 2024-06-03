@@ -183,8 +183,8 @@ const Registration = () => {
 
                                 options={[
                                 {
-                                    value: 'בחר',
-                                    label: 'בחר',
+                                    value: 'אחר',
+                                    label: 'אחר',
                                 },
                                 {
                                     value: 'בה״ד 6',
