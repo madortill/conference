@@ -16,6 +16,7 @@ import Isca from '../../media/images/people/isca.jpeg';
 import Duo1 from '../../media/images/people/duo1.jpeg';
 import Duo2 from '../../media/images/people/duo2.jpeg';
 import Einat from '../../media/images/people/einat.jpeg';
+import Moshe from '../../media/images/people/moshe.jpeg';
 import zahal from '../../media/images/zahal.png';
 import campus from '../../media/images/people/campus.jpeg';
 import bahad from '../../media/images/people/bahad10.jpeg'
@@ -97,8 +98,8 @@ const ParticipantsPreview = () => {
             "font-size": "1rem",
         },
         {
-            "src": Duo2,
-            "name": `עו"ד משה שוקרי ואלינה באנק`,
+            "src": Moshe,
+            "name": `עו"ד משה שוקרי`,
             "topic": "הערכת הדרכה – הדור הבא",
             "font-size": "1rem",
         }
